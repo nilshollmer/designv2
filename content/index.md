@@ -1,25 +1,21 @@
 ---
 title: "Min fina titel"
 ---
-Min me-sida i kursen design
+Vem är Nils?
 =========================
 
-Detta innehåll är skrivet i markdown och du hittar innehållet i filen `content/index.md`.
+[FIGURE src="image/nilsmobil.jpg?w=400" class="right" caption="Nils på mobilen"]
 
-[FIGURE src="image/me.jpg?w=500" class="right" caption="Bild på mig"]
 
-Detta är min me-sida i kursen. Denna sidan innehåller en presentation av mig själv. Underhåll denna sidan under hela kursen och uppdatera den efter hand och behov.
+Det är jag som är Nils. Jag bor i Uppsala men härstammar från Norrlands Hawaii, Alnö utanför Sundsvall. Du hittar mig antingen i replokalen, i skivbutiken där jag knegar eller hemma framför någon av mina datorer. Jag började intressera mig för programmering för några år sedan då jag fick ta över [en halvfärdig hemsida][exs] till mitt och min kompis skivbolag. Den blev inget mästerverk men arbetet fick mig att börja kolla runt efter onlinekurser i webbutveckling. Jag lärde mig django och byggde, med mycket möda och stort besvär, [en ny sida][wod] till mitt band och insåg att jag faktiskt behöver gå i skolan för att förstå hur internet och webbplatser fungerar.
 
-Så, en presentation en bra början. Skriv några ord om dig själv. Jag börjar.
+Som du kanske har uppfattat har jag ett stort musikintresse. Jag är aktiv i två band och uppträder då och då runt om i Sverige. Annars jobbar jag i en skivbutik och lyssnar på jazz i min lägenhet. Jag har även en liten skivsamling som jag underhåller och uppdaterar.
 
-Mitt namn är Mikael Roos. Född och uppvuxen i Bankeryd, Småland, strax utanför Jönköping, i ett villaområde som byggdes upp samtidigt som vi flyttade in där. Jag gillade landhockey och har spelat bandy och hockey samt gått bowlinggymnasiet i Nässjö. Jag har varit städare, diskare, kallskänka, servitör och kock. På ett bananskal landade jag i Ronneby när jag började högskolan 1990 där och nu är jag kvar med fru, barn och så vidare.
+Jag har i min ungdom spelat mycket datorspel men har lagt det mesta sådant på hyllan. Jag kan dock fortfarande tycka om att dyka ner i gamla spel som Heroes 3 eller Diablo 2 ibland.
 
-Programmering har alltid intresserat mig sedan 13-årsåldern och min första dator var en Spectravideo 328 med bandspelare.
+Ha det fint
 
-Om jag skall nämna någon hobby, förutom webbprogrammering, så får det bli att bära sten på sommarstugetomten, och det finns sten så det räcker och blir över.
+/Nils
 
-Till och från får jag för mig att börja på lite hobbies, ett år satsade jag på pokerspel, ett annat år var det geocaching och sedan turfing. Nu ligger jag lågt med hobbies, men något kanske dyker upp...?
-
-Vi syns och hörs i forum och chatt!
-
-/Mikael
+[exs] : http://excellentspaces.com/ "My first website"
+[wod] : http://worldofdogmusic.com/ "My second website"
