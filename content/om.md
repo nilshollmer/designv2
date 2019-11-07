@@ -17,13 +17,14 @@ views:
                 route: block/om-redovisa
 ---
 
-Om
+Om Design
 =========================
 
-Detta innehåll är skrivet i markdown och du hittar innehållet i filen `content/om.md`.
+Den här webbplatsen är min arbetsplats och redovisningssida för kursen Teknisk webbdesign och användbarhet, även kallad design.
 
-Skriv några kloka ord om kursen?
+Kursens syfte går att läsas på [kurssidan på dbwebb](https://dbwebb.se/kurser/design):
+> Kursen syftar till en orientering inom områden design och användbarhet, specifikt för tillämpningsområdet webb.
+> Kursen har tekniken som utgångspunkt, där olika tekniker introduceras och används för att underlätta webbdesign och användbarhet för webbplatsen med syftet att skapa en korrekt och användarvänlig webbplats.
 
-Lägg till en representativ bild för kursen, enligt ditt egna val.
-
-[FIGURE src=image/car.png?w=300 caption="En fin bil som demobild."]
+De tekniker kursen lär mig kommer jag implementera främst genom stylesheets som går att hitta under fliken Styleväljare. Jag kommer även publicera redovisningstexter och rapporter inom olika webdesignrelaterade ämnen.
+[FIGURE src=image/tools.jpg?w=600 caption="Nödvändiga verktyg för den moderna webbprogrammeraren"]
