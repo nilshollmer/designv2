@@ -1,3 +1,6 @@
 #### Redovisa på GitHub
 
-Skriv något kort om ditt redovisa-repo och länka till [repot för me/redovisa på GitHub](XXX).
+Mitt repo finns att hitta på [GitHub](https://github.com/nilshollmer/designv2).
+Dit kommer jag pusha de senaste versionerna av redovisasidan.
+
+Titta gärna förbi!
