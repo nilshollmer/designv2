@@ -26,6 +26,16 @@
     display: none;
 }
 
+/* General */
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
 /* Container */
 
 .wrap-all {
@@ -111,8 +121,44 @@
 
 .inner-wrap-main {
     padding: 30px 0;
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
+}
+
+.region-main .article h1 {
+    font-size: 2em;
+    line-height: 1.5;
+    border-bottom: 1px solid #666;
+    margin-bottom: 20px;
+}
+
+.region-main .article p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.region-main .article .figure {
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.region-main .block {
+    display: block;
+    clear: both;
+    width: 80%;
+    border: 1px solid black;
+    padding: 8px;
+    overflow: auto;
+    margin: auto;
+}
+
+.author-byline {
+    line-height: 1.5;
+}
+.author-byline figure {
+    margin-right: 8px;
+    margin-bottom: 8px;
 }
 
 /* Footer */
