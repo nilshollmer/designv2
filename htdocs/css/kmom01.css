@@ -242,6 +242,22 @@ blockquote {
     margin-bottom: 24px;
 }
 
+.header-anchor {
+    display: none;
+}
+
+ul.revision-history {
+    list-style-type: none;
+    margin-left: 20px;
+    color: #666;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+a.revision-history {
+    font-size: .8em;
+}
+
 /* Sidebar */
 .region-sidebar-left,
 .region-sidebar-right {
