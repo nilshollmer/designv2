@@ -275,6 +275,53 @@ blockquote {
 .wrap-sidebar .block p {
     padding: 0 10px;
 }
+
+/* Stylechooser */
+.region-main h1 {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #666;
+}
+.stylechooser {
+    width: 100%;
+    margin: 20px auto;
+}
+
+.stylechooser fieldset{
+    padding: 2%;
+    line-height: 1.5;
+    text-align: left;
+}
+
+/* Flashmessage */
+
+.inner-wrap-flash-message {
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.flashmessage {
+    border: 5px solid transparent;
+    border-radius: 5px;
+    padding: 0 10px;
+    overflow: auto;
+}
+
+.flashmessage p {
+    margin: 24px 0;
+}
+
+.flashmessage.info{
+    background-color: lightblue;
+    color: #205791;
+    border-color: #205791;
+}
+
+.flashmessage-icon {
+    float: right;
+    font-size: 3em;
+}
+
 /* Footer */
 
 .outer-wrap-footer {
