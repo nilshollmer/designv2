@@ -199,6 +199,11 @@
     margin-bottom: 20px;
 }
 
+.region-main .article h2 {
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
 .region-main .article p {
     font-size: 1.2em;
     line-height: 1.5;
@@ -257,8 +262,19 @@ blockquote {
     margin-bottom: 30px;
 }
 
+.wrap-sidebar .block ul .section-header {
+    font-size: 1.2em;
+    font-weight: 600;
+    border-bottom: 1px solid #666;
+    margin: 10px 0;
+}
+.wrap-sidebar .block ul li:not(.section-header) {
+    margin-left: 10px;
+}
+
 .wrap-sidebar .block ul {
     list-style-type: none;
+    font-size: 1.1em;
     line-height: 1.5;
 }
 
