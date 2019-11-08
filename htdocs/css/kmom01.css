@@ -121,8 +121,19 @@
 
 .inner-wrap-main {
     padding: 30px 0;
-    width: 60%;
     margin: 0 auto;
+    max-width: 1100px;
+}
+
+.region-main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.has-sidebar-right {
+    float: left;
+    display: inline;
+    width: 60%;
 }
 
 .region-main .article h1 {
@@ -161,6 +172,36 @@
     margin-bottom: 8px;
 }
 
+blockquote {
+    border-left: 2px solid #FFEBE6;
+    padding-left: 1em;
+    margin-left: 0;
+    margin-bottom: 24px;
+}
+
+
+/* Sidebar */
+.region-sidebar-left,
+.region-sidebar-right {
+    float: left;
+    display: inline;
+    width: 30%;
+    margin-left: 5%;
+}
+
+.wrap-sidebar .block {
+    margin-bottom: 30px;
+}
+
+.wrap-sidebar .block h4 {
+    background-color: #CCC;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.wrap-sidebar .block p {
+    padding: 0 10px;
+}
 /* Footer */
 
 .outer-wrap-footer {
