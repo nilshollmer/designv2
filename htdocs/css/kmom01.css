@@ -159,6 +159,32 @@
     margin: 0 auto;
 }
 
+.next-previous {
+    line-height: 1.5;
+    font-size: 1.1em;
+    overflow: auto;
+    margin-bottom: 20px;
+}
+
+.next-previous .next,
+.next-previous .previous {
+    display: inline;
+}
+
+.next-previous .previous {
+    float: left;
+    margin-left: 5px;
+}
+
+.next-previous .next {
+    float: right;
+    margin-left: 5px;
+}
+
+.article {
+    clear: both;
+}
+
 .has-sidebar-left,
 .has-sidebar-right {
     float: left;
@@ -184,7 +210,6 @@
     margin-bottom: 20px;
 }
 
-
 /* Byline */
 .region-main .block {
     display: block;
@@ -199,6 +224,7 @@
 .author-byline {
     line-height: 1.5;
 }
+
 .author-byline figure {
     margin-right: 8px;
     margin-bottom: 8px;
@@ -210,7 +236,6 @@ blockquote {
     margin-left: 0;
     margin-bottom: 24px;
 }
-
 
 /* Sidebar */
 .region-sidebar-left,
@@ -234,16 +259,17 @@ blockquote {
 
 .wrap-sidebar .block ul {
     list-style-type: none;
+    line-height: 1.5;
 }
 
-.wrap-sidebar .block ul .selected {
-    background-color: #CCC;
+.wrap-sidebar .block ul .selected::before {
+    content: "»  ";
 }
 
 .wrap-sidebar .block h4 {
     background-color: #CCC;
     font-size: 1.2em;
-    margin-bottom: 20px;
+    margin: 20px 0;
 }
 
 .wrap-sidebar .block p {
