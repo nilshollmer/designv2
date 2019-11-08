@@ -5,6 +5,17 @@
  * to style up the website so it is useable.
  */
 
+ /* Poor Emils normalize */
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     background-color: #223440;
+ }
+
 /* Hide submenu, leave this to kmom02 */
 .rm-desktop ul {
     display: none;
@@ -13,4 +24,95 @@
 /* Hide responsive/mobile menu, leave this to kmom02 */
 .rm-navbar-max {
     display: none;
+}
+
+/* Container */
+
+.wrap-all {
+    background-color: #CCD9FF;
+
+}
+
+.outer-wrap {
+    width: 100%;
+    margin-bottom: 5px;
+    overflow: auto
+}
+
+
+/* Header */
+
+.outer-wrap-header {
+    background-color: #FFEBE6;
+}
+
+.region-header-col-1 {
+    float: left;
+    width: 30%;
+}
+
+.region-header-col-2 {
+    float: left;
+    width: 60%;
+}
+
+.site-logo {
+    display: none;
+}
+
+.my-navbar {
+    list-style-type: none;
+    padding-top: 10px;
+}
+
+.my-navbar li {
+    display: inline;
+    padding: 0 10px;
+}
+
+/* Main */
+
+.inner-wrap-main {
+    padding: 30px 0;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Footer */
+
+.outer-wrap-footer {
+    background-color: #223440;
+    color: white;
+}
+
+.inner-wrap-footer {
+    padding: 10px 0;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.footer-column-wrapper {
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-column-x {
+    padding: 0 1em 24px 0;
+}
+
+.footer-column-1,
+.footer-column-2 {
+    border-right: 1px solid #666;
+}
+.footer-column-2,
+.footer-column-3 {
+    padding-left: 10px;
+}
+
+.region-footer > .block {
+    padding: 30px 0;
+    border-top: 1px solid #666;
+    width: 100%;
+    text-align: center;
 }
