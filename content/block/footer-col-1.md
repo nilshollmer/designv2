@@ -1,3 +1,3 @@
-#### Footer col 1
+#### Om Design
 
-Med brödtext i ett stycke som säger något trevligt om just detta block, eller kanske en lista av länkar.
+Här kommer det stå saker om kursen, om webdesign och det kommer finnas länkar till kurssidan och repot
