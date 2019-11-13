@@ -1,5 +1,5 @@
 ---
-title: "Min fina titel"
+title: "Design by Nils"
 views:
     byline:
         region: main
