@@ -1,7 +1,7 @@
 /**
  * Base style to affect HTML elements on a general scale.
  */
- 
+
 @bgColorHtml: #424242;
 @bgColorBody: #fff;
 @colorBody: #333;
@@ -18,4 +18,25 @@ body {
     color: @colorBody;
     background-color: @bgColorBody;
     font: 100.01%/1 @fontFamilyBody;
+}
+
+/* Links */
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+p a {
+    text-decoration: underline;
+    &:hover {
+        color: #33f;
+        text-decoration: none;
+    }
 }
