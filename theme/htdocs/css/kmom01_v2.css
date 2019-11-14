@@ -15,14 +15,6 @@
  * to style up the website so it is useable.
  */
 /* Poor Emils normalize */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body {
-  background-color: #223440;
-}
 /* Hide submenu, leave this to kmom02 */
 .rm-desktop ul {
   display: none;
@@ -32,20 +24,7 @@ body {
   display: none;
 }
 /* General */
-.right {
-  float: right;
-}
-.left {
-  float: left;
-}
 /* Container */
-.wrap-all {
-  background-color: #CCD9FF;
-}
-.outer-wrap {
-  width: 100%;
-  overflow: auto;
-}
 /* Header */
 .outer-wrap-header {
   background-color: #223440;
@@ -79,20 +58,9 @@ body {
   text-align: center;
 }
 .rm-navbar {
-  position: relative;
   font-size: 1.5em;
-  /* line-height: 0; */
-}
-.my-navbar {
-  list-style-type: none;
-}
-.my-navbar li {
-  display: inline;
-  padding: 0 10px;
 }
 .my-navbar li a {
-  letter-spacing: 2px;
-  text-decoration: none;
   color: white;
 }
 .my-navbar li a:hover {
@@ -104,18 +72,7 @@ body {
   margin: 0 auto;
 }
 /* Breadcrumb */
-.inner-wrap-breadcrumb {
-  max-width: 1100px;
-  margin: 10px auto 20px;
-}
-.breadcrumb-list ul {
-  list-style-type: none;
-}
-.breadcrumb-list ul li {
-  display: inline;
-}
 .breadcrumb-list ul li a {
-  text-decoration: none;
   color: black;
 }
 .breadcrumb-list ul li a:hover {
@@ -126,50 +83,6 @@ body {
   content: " » ";
 }
 /* Main */
-.inner-wrap-main {
-  padding: 30px 0;
-  margin: 0 auto;
-  max-width: 1100px;
-}
-.region-main {
-  width: 80%;
-  margin: 0 auto;
-}
-.next-previous {
-  line-height: 1.5;
-  font-size: 1.1em;
-  overflow: auto;
-  margin-bottom: 20px;
-}
-.next-previous .next,
-.next-previous .previous {
-  display: inline;
-}
-.next-previous .next a,
-.next-previous .previous a {
-  text-decoration: none;
-}
-.next-previous .next a:hover,
-.next-previous .previous a:hover {
-  text-decoration: underline;
-}
-.next-previous .previous {
-  float: left;
-  margin-left: 5px;
-}
-.next-previous .next {
-  float: right;
-  margin-left: 5px;
-}
-.article {
-  clear: both;
-}
-.has-sidebar-left,
-.has-sidebar-right {
-  float: left;
-  display: inline;
-  width: 60%;
-}
 .region-main .article h1 {
   font-size: 2em;
   line-height: 1.5;
@@ -190,22 +103,6 @@ body {
   margin-bottom: 20px;
 }
 /* Byline */
-.region-main .block {
-  display: block;
-  clear: both;
-  width: 80%;
-  border: 1px solid #666;
-  padding: 8px;
-  overflow: auto;
-  margin: auto;
-}
-.author-byline {
-  line-height: 1.5;
-}
-.author-byline figure {
-  margin-right: 8px;
-  margin-bottom: 8px;
-}
 blockquote {
   border-left: 2px solid #FFEBE6;
   padding-left: 1em;
@@ -226,20 +123,9 @@ a.revision-history {
   font-size: 0.8em;
 }
 /* Sidebar */
-.region-sidebar-left,
-.region-sidebar-right {
-  float: left;
-  display: inline;
-  width: 30%;
-}
-.region-sidebar-left {
-  margin-right: 5%;
-}
-.region-sidebar-right {
-  margin-left: 10%;
-}
-.wrap-sidebar .block {
-  margin-bottom: 30px;
+.figure a img {
+  position: relative;
+  width: 100%;
 }
 .wrap-sidebar .block ul .section-header {
   font-size: 1.2em;
@@ -315,16 +201,6 @@ a.revision-history {
   background-color: #223440;
   color: white;
 }
-.inner-wrap-footer {
-  padding: 10px 0;
-  width: 60%;
-  margin: 0 auto;
-}
-.footer-column-wrapper {
-  padding: 30px 0;
-  display: flex;
-  justify-content: space-around;
-}
 .footer-column-x {
   padding: 0 1em 24px 0;
 }
@@ -355,9 +231,165 @@ a.revision-history {
  * Base style to affect HTML elements on a general scale.
  */
 /**
+ * Base style to affect HTML elements on a general scale.
+ */
+html {
+  overflow-y: scroll;
+  background-color: #223440;
+}
+body {
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #CCD9FF;
+  font: 100.01%/1 serif;
+}
+/**
  * Layout style for general structure of header, navbar, main, footer
  * and other regions of the page including route specific styles.
  */
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+/**
+ * Variables
+ */
+/**
+ * General layout
+ */
+.outer-wrap {
+  width: 100%;
+  overflow: auto;
+}
+.inner-wrap-main {
+  padding: 30px 0;
+  margin: 0 auto;
+  max-width: 1100px;
+}
+.inner-wrap-main .row {
+  display: flex;
+  justify-content: space-between;
+}
+.region-main {
+  width: auto;
+  margin: 0 auto;
+}
+.article {
+  clear: both;
+}
+.has-sidebar-left,
+.has-sidebar-right {
+  float: left;
+  display: inline;
+  width: 60%;
+}
+/* Navbar*/
+.my-navbar {
+  list-style-type: none;
+}
+.my-navbar li {
+  display: inline;
+  padding: 0 10px;
+}
+.my-navbar li a {
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+.rm-navbar {
+  position: relative;
+  font-size: 1.5em;
+}
+/* Breadcrumb */
+.inner-wrap-breadcrumb {
+  max-width: 1100px;
+  margin: 10px auto 20px;
+}
+.breadcrumb-list ul {
+  list-style-type: none;
+}
+.breadcrumb-list ul li {
+  display: inline;
+}
+.breadcrumb-list ul li a {
+  text-decoration: none;
+}
+/* Next and previous buttons */
+.next-previous {
+  line-height: 1.5;
+  font-size: 1.1em;
+  overflow: auto;
+  margin-bottom: 20px;
+}
+.next,
+.previous {
+  display: inline;
+}
+.next a,
+.previous a {
+  text-decoration: none;
+}
+.next a:hover,
+.previous a:hover {
+  text-decoration: underline;
+}
+.previous {
+  float: left;
+}
+.next {
+  float: right;
+}
+/* Sidebar */
+.region-sidebar-left,
+.region-sidebar-right {
+  float: left;
+  display: inline;
+  width: 30%;
+}
+.region-sidebar-left {
+  margin-right: 5%;
+}
+.region-sidebar-right {
+  margin-left: 5%;
+}
+.wrap-sidebar .block {
+  margin-bottom: 30px;
+}
+/* Byline */
+.region-main .block {
+  display: block;
+  clear: both;
+  width: 80%;
+  border: 1px solid #666;
+  padding: 8px;
+  overflow: auto;
+  margin: auto;
+}
+.author-byline {
+  line-height: 1.5;
+}
+.author-byline figure {
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+/* Footer*/
+.inner-wrap-footer {
+  padding: 10px 0;
+  width: 1100px;
+  margin: 0 auto;
+}
+.footer-column-wrapper {
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-around;
+}
+/* Right and left float */
+.right {
+  float: right;
+}
+.left {
+  float: left;
+}
 /**
  * Show off the regions used in the website, to ease styling.
  */
