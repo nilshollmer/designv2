@@ -1,1 +1,1 @@
-Copyright 2019 Nils Hollmer (Inga intressanta länkar här ännu)
+Copyright 2019 Nils Hollmer
