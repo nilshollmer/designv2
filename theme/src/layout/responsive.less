@@ -2,16 +2,96 @@
  * Layout for responsive style through media queries.
  */
 
+/* Main and sidebar layout */
 @media screen and (max-width: 1500px) {
     .site-logo {
         display: none;
     }
 }
 
+@media screen and (max-width: 1050px) {
+    .inner-wrap-main,
+    .inner-wrap-footer,
+    .inner-wrap-breadcrumb {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .inner-wrap-main,
+    .inner-wrap-footer,
+    .inner-wrap-breadcrumb {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .breadcrumb-list ul {
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .toc {
+        padding-left: 0px;
+    }
+
+    .article .figure {
+        margin: 0 auto;
+        float: none;
+    }
+    .region-main .block {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .inner-wrap-main .row {
+        flex-flow: column;
+    }
+
+    .footer-column-wrapper {
+        flex-flow: column;
+
+        .footer-column-1,
+        .footer-column-2 {
+            border-right-width: 0;
+            border-bottom: 1px solid #666;
+        }
+
+        .footer-column-2,
+        .footer-column-3 {
+            padding-left: 0px;
+        }
+    }
+
+    .region-sidebar-left,
+    .region-sidebar-right {
+        max-width: 100%;
+        margin-left: 0;
+    }
+}
+
 /**
  * Navbar
  */
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 860px) {
+    .site-logo-text {
+        font-size: 30px;
+    }
+
+    .region-header-col-3  {
+        width: 10%;
+    }
+
+    .region-header-col-2 {
+        float: left;
+        width: 70%;
+    }
+
+}
+
+
+@media screen and (max-width: 680px) {
     .rm-small {
         display: block;
     }
@@ -19,4 +99,20 @@
     .rm-desktop {
         display: none;
     }
+
+    .region-header-col-1 {
+        float: left;
+        width: 70%;
+
+        .site-logo-text {
+            font-size: 50px;
+        }
+
+    }
+
+    .region-header-col-3 {
+        float: left;
+        width: 30%;
+    }
+
 }

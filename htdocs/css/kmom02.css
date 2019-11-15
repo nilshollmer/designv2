@@ -4786,19 +4786,26 @@ p a:hover {
 .outer-wrap {
   width: 100%;
 }
-.outer-wrap-header::after {
+.inner-wrap {
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.inner-wrap::after {
   content: "";
   display: block;
   clear: both;
 }
-.inner-wrap {
-  margin: 0 auto;
-}
 /* Header */
 .inner-wrap-header {
-  max-width: 100%;
+  width: 100%;
 }
-.region-header-col-1 {
+.inner-wrap-header::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.region-header-col-1,
+.region-header-col-3 {
   float: left;
   width: 20%;
 }
@@ -4806,20 +4813,20 @@ p a:hover {
   float: left;
   width: 60%;
 }
-.region-header-col-3 {
-  float: left;
-  width: 20%;
-}
 /* Navbar */
-.my-navbar li {
+.rm-desktop {
+  position: relative;
+}
+.rm-desktop li {
   display: inline;
 }
-.rm-navbar {
-  position: relative;
+.rm-desktop li a {
+  padding-left: 1vw;
+  padding-right: 1vw;
 }
 /* Flash image */
 .inner-wrap-flash {
-  max-width: 100%;
+  width: 100%;
   margin: 0 auto;
 }
 .region-flash img {
@@ -4829,7 +4836,7 @@ p a:hover {
 }
 /* Breadcrumb */
 .inner-wrap-breadcrumb {
-  max-width: 70%;
+  width: 70%;
   margin: 10px auto 20px;
 }
 .breadcrumb-list ul li {
@@ -4840,11 +4847,8 @@ p a:hover {
   overflow: auto;
 }
 .inner-wrap-main {
-  max-width: 70%;
+  width: 70%;
   margin: 0 auto;
-}
-.region-main {
-  width: 100%;
 }
 .article {
   clear: both;
@@ -4867,7 +4871,7 @@ p a:hover {
 /* Sidebar */
 .region-sidebar-left,
 .region-sidebar-right {
-  max-width: 30%;
+  min-width: 30%;
 }
 .region-sidebar-left {
   margin-right: 5%;
@@ -4900,25 +4904,6 @@ p a:hover {
 }
 .left {
   float: left;
-}
-/**
- * Layout for responsive style through media queries.
- */
-@media screen and (max-width: 1500px) {
-  .site-logo {
-    display: none;
-  }
-}
-/**
- * Navbar
- */
-@media screen and (max-width: 960px) {
-  .rm-small {
-    display: block;
-  }
-  .rm-desktop {
-    display: none;
-  }
 }
 /**
  * Show off the regions used in the website, to ease styling.
@@ -5208,6 +5193,9 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 .site-logo-text a {
   color: #333;
 }
+.site-logo-text a:hover {
+  text-decoration: none;
+}
 .region-header-col-2 {
   text-align: center;
 }
@@ -5235,24 +5223,29 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 .inner-wrap-main {
   padding: 30px 0;
 }
-.region-main h1 {
+.article h1 {
   font-size: 2em;
   line-height: 1.5;
   margin-bottom: 20px;
   border-bottom: 1px solid #666;
 }
-.region-main h2 {
+.article h2 {
   font-size: 1.5em;
   margin: 20px 0;
 }
-.region-main p {
-  font-size: 1.2em;
+.article p {
+  font-size: 1em;
   line-height: 1.5;
   margin-bottom: 20px;
 }
-.region-main .figure {
+.article .figure {
   margin-left: 10px;
   margin-bottom: 20px;
+  width: 400px;
+}
+figcaption {
+  text-align: center;
+  font-style: italic;
 }
 /* Byline */
 .region-main .block {
@@ -5382,6 +5375,105 @@ a.revision-history {
   padding: 30px 0;
   border-top: 1px solid #666;
   text-align: center;
+}
+/**
+ * Internal responsive modules
+ */
+/**
+ * Layout for responsive style through media queries.
+ */
+/* Main and sidebar layout */
+@media screen and (max-width: 1500px) {
+  .site-logo {
+    display: none;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .inner-wrap-main,
+  .inner-wrap-footer,
+  .inner-wrap-breadcrumb {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 830px) {
+  .inner-wrap-main,
+  .inner-wrap-footer,
+  .inner-wrap-breadcrumb {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .breadcrumb-list ul {
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 770px) {
+  .toc {
+    padding-left: 0px;
+  }
+  .article .figure {
+    margin: 0 auto;
+    float: none;
+  }
+  .region-main .block {
+    width: auto;
+  }
+}
+@media screen and (max-width: 630px) {
+  .inner-wrap-main .row {
+    flex-flow: column;
+  }
+  .footer-column-wrapper {
+    flex-flow: column;
+  }
+  .footer-column-wrapper .footer-column-1,
+  .footer-column-wrapper .footer-column-2 {
+    border-right-width: 0;
+    border-bottom: 1px solid #666;
+  }
+  .footer-column-wrapper .footer-column-2,
+  .footer-column-wrapper .footer-column-3 {
+    padding-left: 0px;
+  }
+  .region-sidebar-left,
+  .region-sidebar-right {
+    max-width: 100%;
+    margin-left: 0;
+  }
+}
+/**
+ * Navbar
+ */
+@media screen and (max-width: 860px) {
+  .site-logo-text {
+    font-size: 30px;
+  }
+  .region-header-col-3 {
+    width: 10%;
+  }
+  .region-header-col-2 {
+    float: left;
+    width: 70%;
+  }
+}
+@media screen and (max-width: 680px) {
+  .rm-small {
+    display: block;
+  }
+  .rm-desktop {
+    display: none;
+  }
+  .region-header-col-1 {
+    float: left;
+    width: 70%;
+  }
+  .region-header-col-1 .site-logo-text {
+    font-size: 50px;
+  }
+  .region-header-col-3 {
+    float: left;
+    width: 30%;
+  }
 }
 /**
  * My own settings, not currently in their own module.
