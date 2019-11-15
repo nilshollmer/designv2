@@ -4798,6 +4798,7 @@ p a:hover {
 /* Header */
 .inner-wrap-header {
   width: 100%;
+  padding: 10px;
 }
 .inner-wrap-header::after {
   content: "";
@@ -5191,9 +5192,6 @@ a.rm-button.rm-clicked .rm-button-face-2 {
  */
 /* General */
 /* Header */
-.inner-wrap-header {
-  padding: 10px;
-}
 .site-logo {
   display: none;
   position: absolute;
