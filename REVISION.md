@@ -1,6 +1,12 @@
 Revision history
 ===================
 
+v2.0.0 (2019-11-15)
+---------------------
+
+* Added CSS to kmom02-stylesheet
+* Implementing Less and using it from here on out
+
 v1.0.1 (2019-11-08)
 ---------------------
 
