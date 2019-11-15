@@ -4861,6 +4861,15 @@ p a:hover {
   display: flex;
   justify-content: space-between;
 }
+/* Stylechooser */
+.stylechooser fieldset {
+  padding: 2%;
+  line-height: 1.5;
+  text-align: left;
+}
+.stylechooser fieldset p label select {
+  width: 100%;
+}
 /* Next and previous buttons */
 .next,
 .previous {
@@ -4898,6 +4907,9 @@ p a:hover {
 .footer-column-wrapper {
   display: flex;
   justify-content: space-around;
+}
+.footer-column-wrapper .footer-column {
+  width: 30%;
 }
 .region-footer > .block {
   width: 100%;
@@ -5320,15 +5332,6 @@ a.revision-history {
 .wrap-sidebar .block p {
   padding: 0 10px;
 }
-/* Stylechooser */
-.stylechooser fieldset {
-  padding: 2%;
-  line-height: 1.5;
-  text-align: left;
-}
-.stylechooser fieldset p label select {
-  width: 100%;
-}
 /* Flashmessage */
 .inner-wrap-flash-message {
   width: 800px;
@@ -5359,6 +5362,9 @@ a.revision-history {
 }
 .inner-wrap-footer {
   padding: 10px 0;
+}
+.inner-wrap-footer p a {
+  color: white;
 }
 .footer-column-wrapper {
   padding: 30px 0;
@@ -5428,6 +5434,9 @@ a.revision-history {
   }
   .footer-column-wrapper {
     flex-flow: column;
+  }
+  .footer-column-wrapper .footer-column {
+    width: 100%;
   }
   .footer-column-wrapper .footer-column-1,
   .footer-column-wrapper .footer-column-2 {
