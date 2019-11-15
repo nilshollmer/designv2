@@ -251,6 +251,10 @@ body {
   background-color: #CCD9FF;
   font: 100.01%/1 serif;
 }
+/* Images */
+img {
+  max-width: 100%;
+}
 /* Links */
 ul {
   list-style-type: none;
