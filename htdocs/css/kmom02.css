@@ -4850,6 +4850,10 @@ p a:hover {
   width: 70%;
   margin: 0 auto;
 }
+.region-main {
+  margin-left: auto;
+  margin-right: auto;
+}
 .article {
   clear: both;
 }
@@ -5317,14 +5321,13 @@ a.revision-history {
   padding: 0 10px;
 }
 /* Stylechooser */
-.stylechooser {
-  width: 100%;
-  margin: 20px auto;
-}
 .stylechooser fieldset {
   padding: 2%;
   line-height: 1.5;
   text-align: left;
+}
+.stylechooser fieldset p label select {
+  width: 100%;
 }
 /* Flashmessage */
 .inner-wrap-flash-message {
