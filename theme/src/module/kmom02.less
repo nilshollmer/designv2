@@ -1,26 +1,13 @@
 /*!
- * Stylesheet for design kmom01.
+ * Stylesheet for design kmom02.
  *
  * This stylesheet is for the design course and kmom01. Fill it with style
  * to style up the website so it is useable.
  */
 
-/* Hide submenu, leave this to kmom02 */
-.rm-desktop ul {
-    display: none;
-}
-/* Hide responsive/mobile menu, leave this to kmom02 */
-.rm-navbar-max {
-    display: none;
-}
-
 /* General */
 
 /* Header */
-
-.outer-wrap-header {
-    background-color: @bgColorHtml;
-}
 
 .inner-wrap-header {
     padding: 10px;
@@ -31,18 +18,19 @@
     position: absolute;
     top: 40px;
     left: 40px;
-}
 
-.site-logo img {
-    width: 150px;
+    img {
+        width: 150px;
+    }
+
 }
 
 .site-logo-text {
     font-size: 40px;
-}
 
-.site-logo-text a {
-    color: white;
+    a {
+        color: #333;
+    }
 }
 
 .region-header-col-2 {
@@ -51,19 +39,16 @@
 
 /* Navbar */
 
-.rm-navbar {
-    font-size: 1.5em;
-}
-
 .my-navbar li {
-    padding: 0 10px;
+    background-color: @bgColorBody;
+    a {
+        font-size: 1.2em;
+    }
 }
 
-.my-navbar li a{
-    color: white;
-    letter-spacing: 2px;
+.rm-button i {
+    font-size: 2em;
 }
-
 
 .breadcrumb-list ul li a {
     color: @colorBody;
@@ -84,28 +69,33 @@
     padding: 30px 0;
 }
 
-.region-main .article h1 {
-    font-size: 2em;
-    line-height: 1.5;
-    border-bottom: 1px solid #666;
-    margin-bottom: 20px;
+.region-main {
+
+    h1 {
+        font-size: 2em;
+        line-height: 1.5;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #666;
+    }
+
+    h2 {
+        font-size: 1.5em;
+        margin: 20px 0;
+    }
+
+    p {
+        font-size: 1.2em;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+
+    .figure {
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+
 }
 
-.region-main .article h2 {
-    font-size: 1.5em;
-    margin: 20px 0;
-}
-
-.region-main .article p {
-    font-size: 1.2em;
-    line-height: 1.5;
-    margin-bottom: 20px;
-}
-
-.region-main .article .figure {
-    margin-left: 10px;
-    margin-bottom: 20px;
-}
 
 /* Byline */
 .region-main .block {
@@ -193,20 +183,16 @@ a.revision-history {
 }
 
 /* Stylechooser */
-.region-main h1 {
-    margin-bottom: 20px;
-    border-bottom: 1px solid #666;
-}
 
 .stylechooser {
     width: 100%;
     margin: 20px auto;
-}
 
-.stylechooser fieldset{
-    padding: 2%;
-    line-height: 1.5;
-    text-align: left;
+    fieldset {
+        padding: 2%;
+        line-height: 1.5;
+        text-align: left;
+    }
 }
 
 /* Flashmessage */
