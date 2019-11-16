@@ -1,6 +1,13 @@
 Revision history
 ===================
 
+v2.0.1 (2019-11-16)
+---------------------
+
+* Add text to redovisning for kmom02
+* Adjust flashimage size in redovisning
+* Edit README
+
 v2.0.0 (2019-11-15)
 ---------------------
 
