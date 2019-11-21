@@ -39,7 +39,7 @@
 /* Header */
 
 .region-header-col-1,
-.region-header-col-3  {
+.region-header-col-3 {
     #desinax-vgrid.column(5);
 }
 
@@ -49,13 +49,37 @@
 
 /* Navbar */
 
+.rm-max.rm-navbar {
+    position: absolute;
+    top: @magicNumber;
+    right: 24px;
+}
+
+.rm-desktop {
+    text-align: center;
+
+    li a {
+    padding: 0;
+    margin: @magicNumber;
+    }
+
+    li ul li {
+        a {
+            margin-top: 0;
+        }
+    }
+}
+
+/* Flash*/
+
 .region-flash img {
     #desinax-vgrid.column(@columns);
     object-fit: cover;
-    max-height: 200px;
+    max-height: @magicNumber * 8;
 }
 
 /* Breadcrumb */
+
 .region-breadcrumb {
     #desinax-vgrid.column(@columns);
 }
