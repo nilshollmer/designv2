@@ -14,11 +14,18 @@ views:
         template: anax/v2/image/default
         data:
             src: "image/vinyls.jpg"
+    sidebar-image:
+        region: sidebar-right
+        template: anax/v2/block/default
+        data:
+            meta:
+                type: single
+                route: block/nils-right
 ---
 Vem är Nils?
 =========================
 
-[FIGURE src="image/nilsmobil.jpg?w=400" class="right" caption="Nils på mobilen"]
+<!-- [FIGURE src="image/nilsmobil.jpg?w=400" class="me-image" caption="Nils på mobilen"] -->
 
 
 Det är jag som är Nils.
