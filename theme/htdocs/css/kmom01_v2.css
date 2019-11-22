@@ -69,6 +69,9 @@
 .region-flash img {
   height: 200px;
 }
+img {
+  max-width: 100%;
+}
 /* Main */
 .inner-wrap-main {
   padding: 30px 0;
