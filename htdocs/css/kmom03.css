@@ -5509,128 +5509,6 @@ hr::after {
   margin-right: 0.52083333%;
 }
 /**
-* Responsive 1, 2, 3
-*
-*/
-@media screen and (max-width: 1150px) {
-  .rm-desktop li a {
-    margin-left: 12px;
-    margin-right: 12px;
-  }
-}
-@media screen and (max-width: 1050px) {
-  .region-main {
-    display: inline;
-    float: left;
-    width: 90.625%;
-    margin-left: 0.52083333%;
-    margin-right: 0.52083333%;
-    margin-left: 4.6875%;
-  }
-  .region-main.has-sidebar-left.has-sidebar-right {
-    display: inline;
-    float: left;
-    width: 90.625%;
-    margin-left: 0.52083333%;
-    margin-right: 0.52083333%;
-    margin-left: 4.6875%;
-  }
-  .region-sidebar-left.has-sidebar-right,
-  .region-sidebar-right.has-sidebar-left {
-    display: inline;
-    float: left;
-    width: 90.625%;
-    margin-left: 0.52083333%;
-    margin-right: 0.52083333%;
-    margin-left: 4.6875%;
-  }
-}
-@media screen and (max-width: 950px) {
-  .region-header-col-1 {
-    display: inline;
-    float: left;
-    width: 23.95833333%;
-    margin-left: 0.52083333%;
-    margin-right: 0.52083333%;
-  }
-  .region-header-col-2 {
-    display: inline;
-    float: left;
-    width: 65.625%;
-    margin-left: 0.52083333%;
-    margin-right: 0.52083333%;
-  }
-  .region-header-col-3 {
-    display: inline;
-    float: left;
-    width: 7.29166667%;
-    margin-left: 0.52083333%;
-    margin-right: 0.52083333%;
-  }
-}
-@media screen and (max-width: 900px) {
-  .region-main.has-sidebar-right,
-  .region-main.has-sidebar-left {
-    display: inline;
-    float: left;
-    width: 90.625%;
-    margin-left: 0.52083333%;
-    margin-right: 0.52083333%;
-    margin-left: 4.6875%;
-  }
-  .region-sidebar-left {
-    display: inline;
-    float: left;
-    width: 90.625%;
-    margin-left: 0.52083333%;
-    margin-right: 0.52083333%;
-    margin-left: 4.6875%;
-  }
-  .region-sidebar-right {
-    display: inline;
-    float: left;
-    width: 90.625%;
-    margin-left: 0.52083333%;
-    margin-right: 0.52083333%;
-    margin-left: 4.6875%;
-  }
-  .footer-column {
-    display: inline;
-    float: left;
-    width: 90.625%;
-    margin-left: 0.52083333%;
-    margin-right: 0.52083333%;
-    margin-left: 4.6875%;
-  }
-  .site-footer {
-    display: inline;
-    float: left;
-    width: 90.625%;
-    margin-left: 0.52083333%;
-    margin-right: 0.52083333%;
-    margin-left: 4.6875%;
-  }
-}
-@media screen and (max-width: 800px) {
-  .region-header-col-1 {
-    display: inline;
-    float: left;
-    width: 90.625%;
-    margin-left: 0.52083333%;
-    margin-right: 0.52083333%;
-  }
-  .region-header-col-2 {
-    display: none;
-  }
-  .region-header-col-3 {
-    display: inline;
-    float: left;
-    width: 7.29166667%;
-    margin-left: 0.52083333%;
-    margin-right: 0.52083333%;
-  }
-}
-/**
 * Layout style for general structure of header, navbar, main, footer
 * and other regions of the page including route specific styles.
 */
@@ -5829,6 +5707,128 @@ ul.revision-history {
 /**
 * Internal responsive modules
 */
+/**
+ * Layout for responsive style through media queries on kmom03.
+ */
+/* Main and sidebar layout */
+@media screen and (max-width: 1150px) {
+  .rm-desktop li a {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .region-main {
+    display: inline;
+    float: left;
+    width: 90.625%;
+    margin-left: 0.52083333%;
+    margin-right: 0.52083333%;
+    margin-left: 4.6875%;
+  }
+  .region-main.has-sidebar-left.has-sidebar-right {
+    display: inline;
+    float: left;
+    width: 90.625%;
+    margin-left: 0.52083333%;
+    margin-right: 0.52083333%;
+    margin-left: 4.6875%;
+  }
+  .region-sidebar-left.has-sidebar-right,
+  .region-sidebar-right.has-sidebar-left {
+    display: inline;
+    float: left;
+    width: 90.625%;
+    margin-left: 0.52083333%;
+    margin-right: 0.52083333%;
+    margin-left: 4.6875%;
+  }
+}
+@media screen and (max-width: 950px) {
+  .region-header-col-1 {
+    display: inline;
+    float: left;
+    width: 23.95833333%;
+    margin-left: 0.52083333%;
+    margin-right: 0.52083333%;
+  }
+  .region-header-col-2 {
+    display: inline;
+    float: left;
+    width: 65.625%;
+    margin-left: 0.52083333%;
+    margin-right: 0.52083333%;
+  }
+  .region-header-col-3 {
+    display: inline;
+    float: left;
+    width: 7.29166667%;
+    margin-left: 0.52083333%;
+    margin-right: 0.52083333%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .region-main.has-sidebar-right,
+  .region-main.has-sidebar-left {
+    display: inline;
+    float: left;
+    width: 90.625%;
+    margin-left: 0.52083333%;
+    margin-right: 0.52083333%;
+    margin-left: 4.6875%;
+  }
+  .region-sidebar-left {
+    display: inline;
+    float: left;
+    width: 90.625%;
+    margin-left: 0.52083333%;
+    margin-right: 0.52083333%;
+    margin-left: 4.6875%;
+  }
+  .region-sidebar-right {
+    display: inline;
+    float: left;
+    width: 90.625%;
+    margin-left: 0.52083333%;
+    margin-right: 0.52083333%;
+    margin-left: 4.6875%;
+  }
+  .footer-column {
+    display: inline;
+    float: left;
+    width: 90.625%;
+    margin-left: 0.52083333%;
+    margin-right: 0.52083333%;
+    margin-left: 4.6875%;
+  }
+  .site-footer {
+    display: inline;
+    float: left;
+    width: 90.625%;
+    margin-left: 0.52083333%;
+    margin-right: 0.52083333%;
+    margin-left: 4.6875%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .region-header-col-1 {
+    display: inline;
+    float: left;
+    width: 90.625%;
+    margin-left: 0.52083333%;
+    margin-right: 0.52083333%;
+  }
+  .region-header-col-2 {
+    display: none;
+  }
+  .region-header-col-3 {
+    display: inline;
+    float: left;
+    width: 7.29166667%;
+    margin-left: 0.52083333%;
+    margin-right: 0.52083333%;
+  }
+}
 /**
 * My own settings, not currently in their own module.
 */
