@@ -4996,7 +4996,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   right: 0;
 }
 .hgrid .inner-wrap {
-  background-image: url("../img/magic-number-22px.png");
+  background-image: url("../img/magic-number-24px.png");
 }
 /**
 * Base style to affect HTML elements on a general scale.
@@ -5013,7 +5013,7 @@ body {
   padding: 0;
   color: #333;
   background-color: #fff;
-  font: 16px/1.375 Verdana, Geneva, sans-serif;
+  font: 16px/1.5 Verdana, Geneva, sans-serif;
 }
 img {
   max-width: 100%;
@@ -5028,8 +5028,8 @@ h4,
 h5,
 h6 {
   font-family: Cambria, Georgia, Times, 'Times New Roman', serif;
-  margin-top: 22px;
-  margin-bottom: 22px;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 h1 img,
 h2 img,
@@ -5041,10 +5041,10 @@ h6 img {
 }
 h1 {
   font-size: 2.375em;
-  line-height: 1.15789474;
+  line-height: 1.26315789;
   font-weight: normal;
   border-bottom: 1px solid #666;
-  margin-bottom: 21px;
+  margin-bottom: 23px;
 }
 h1 ~ h1,
 h1 ~ h2,
@@ -5052,58 +5052,58 @@ h1 ~ h3,
 h1 ~ h4,
 h1 ~ h5,
 h1 ~ h6 {
-  margin-top: 44px;
+  margin-top: 48px;
 }
 h1 + h2 {
-  margin-top: 22px;
+  margin-top: 24px;
 }
 h2 {
   font-size: 1.875em;
-  line-height: 1.46666667;
+  line-height: 1.6;
   font-weight: normal;
-  margin-bottom: 21px;
+  margin-bottom: 23px;
   border-bottom: 1px solid #CCC;
 }
 h2 + h3 {
-  margin-top: 22px;
+  margin-top: 24px;
 }
 h3 {
   font-size: 1.75em;
-  line-height: 1.57142857;
+  line-height: 1.71428571;
   font-weight: normal;
-  margin-bottom: 21px;
+  margin-bottom: 23px;
   border-bottom: 1px solid #EEE;
 }
 h3 + h4 {
-  margin-top: 22px;
+  margin-top: 24px;
 }
 h4 {
   font-size: 1.5em;
-  line-height: 1.83333333;
+  line-height: 1;
   font-weight: normal;
-  margin-bottom: 21px;
+  margin-bottom: 23px;
   border-bottom: 1px solid #EEE;
 }
 h4 + h5 {
-  margin-top: 22px;
+  margin-top: 24px;
 }
 h5 {
   font-size: 1.25em;
-  line-height: 1.1;
-  margin-bottom: 21px;
+  line-height: 1.2;
+  margin-bottom: 23px;
   border-bottom: 1px solid #EEE;
 }
 h5 + h6 {
-  margin-top: 22px;
+  margin-top: 24px;
 }
 h6 {
   font-size: 1.25em;
-  line-height: 1.1;
-  margin-bottom: 21px;
+  line-height: 1.2;
+  margin-bottom: 23px;
   border-bottom: 1px solid #EEE;
 }
 p {
-  margin-bottom: 22px;
+  margin-bottom: 24px;
 }
 small,
 .small,
@@ -5144,7 +5144,7 @@ blockquote {
   border-left: 4px solid #eee;
   padding-left: 1em;
   margin-left: 0;
-  margin-bottom: 22px;
+  margin-bottom: 24px;
 }
 pre,
 code,
@@ -5170,7 +5170,7 @@ pre code {
   white-space: pre;
 }
 pre {
-  margin-bottom: 22px;
+  margin-bottom: 24px;
 }
 pre code {
   display: block;
@@ -5180,21 +5180,21 @@ div.code,
 pre code {
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
-  margin-bottom: 21px;
-  padding-top: 11px;
-  padding-bottom: 11px;
+  margin-bottom: 23px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   padding-left: 0.5em;
   background-color: #eee;
 }
 ul,
 ol {
-  margin-bottom: 22px;
+  margin-bottom: 24px;
   padding-left: 1.5em;
 }
 ul p,
 ol p {
-  margin-top: 11px;
-  margin-bottom: 11px;
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 ul ul,
 ol ul,
@@ -5209,7 +5209,7 @@ ol {
   list-style-type: decimal;
 }
 dl {
-  margin-bottom: 22px;
+  margin-bottom: 24px;
 }
 dl.horizontal dt {
   clear: left;
@@ -5227,7 +5227,7 @@ article table,
 .table,
 .table1,
 .table2 {
-  margin-bottom: 22px;
+  margin-bottom: 24px;
 }
 table.full-width,
 article .table,
@@ -5248,7 +5248,7 @@ article table caption,
 .table caption,
 .table2 caption {
   font-size: 0.875em;
-  line-height: 1.57142857;
+  line-height: 1.71428571;
   text-align: left;
   font-style: italic;
 }
@@ -5270,7 +5270,7 @@ article table th,
 article table td,
 .table td,
 .table2 td {
-  padding: 5.5px;
+  padding: 6px;
 }
 article table tr,
 .table tr,
@@ -5294,8 +5294,8 @@ hr {
   border: 0;
   height: 1px;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-  margin-top: 32px;
-  margin-bottom: 33px;
+  margin-top: 35px;
+  margin-bottom: 36px;
 }
 hr::after {
   content: "§";
@@ -5408,7 +5408,7 @@ hr::after {
 /* Navbar */
 .rm-max.rm-navbar {
   position: absolute;
-  top: 22px;
+  top: 24px;
   right: 24px;
 }
 .rm-desktop {
@@ -5416,7 +5416,7 @@ hr::after {
 }
 .rm-desktop li a {
   padding: 0;
-  margin: 22px;
+  margin: 24px;
 }
 .rm-desktop li ul li a {
   margin-top: 0;
@@ -5429,7 +5429,7 @@ hr::after {
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
   object-fit: cover;
-  max-height: 176px;
+  max-height: 192px;
 }
 /* Breadcrumb */
 .region-breadcrumb {
@@ -5486,6 +5486,21 @@ hr::after {
   display: inline;
   float: left;
   width: 19.79166667%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+}
+/* Footer*/
+.footer-column {
+  display: inline;
+  float: left;
+  width: 32.29166667%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+}
+.site-footer {
+  display: inline;
+  float: left;
+  width: 98.95833333%;
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
 }
@@ -5546,23 +5561,23 @@ hr::after {
     margin-right: 0.52083333%;
     margin-left: 4.6875%;
   }
+  .footer-column {
+    display: inline;
+    float: left;
+    width: 90.625%;
+    margin-left: 0.52083333%;
+    margin-right: 0.52083333%;
+    margin-left: 4.6875%;
+  }
+  .site-footer {
+    display: inline;
+    float: left;
+    width: 90.625%;
+    margin-left: 0.52083333%;
+    margin-right: 0.52083333%;
+    margin-left: 4.6875%;
+  }
 }
-/* Footer*/
-.footer-column {
-  display: inline;
-  float: left;
-  width: 32.29166667%;
-  margin-left: 0.52083333%;
-  margin-right: 0.52083333%;
-}
-.site-footer {
-  display: inline;
-  float: left;
-  width: 98.95833333%;
-  margin-left: 0.52083333%;
-  margin-right: 0.52083333%;
-}
-/* Right and left float */
 /**
 * Layout style for general structure of header, navbar, main, footer
 * and other regions of the page including route specific styles.
@@ -5622,7 +5637,6 @@ p a {
   text-decoration: underline;
 }
 p a:hover {
-  color: #33f;
   text-decoration: none;
 }
 /* Header */
@@ -5678,7 +5692,7 @@ figcaption p {
   padding-left: 0;
 }
 .toc li {
-  padding-left: 22px;
+  padding-left: 24px;
 }
 .toc .section-header {
   font-weight: 600;
@@ -5695,28 +5709,28 @@ figcaption p {
   border: 1px solid #666;
 }
 .author-byline figure {
-  margin-top: 21px;
+  margin-top: 23px;
   float: left;
 }
 .author-byline figure .me-byline {
   max-height: 6em;
 }
 .author-byline p {
-  margin-top: 21px;
+  margin-top: 23px;
 }
 /* Verktyg */
 .header-anchor {
   display: none;
 }
 ul.revision-history {
-  margin-left: 22px;
+  margin-left: 24px;
   color: #666;
-  margin-bottom: 22px;
+  margin-bottom: 24px;
 }
 /* Next and previous buttons */
 .next-previous {
   overflow: auto;
-  margin-bottom: 22px;
+  margin-bottom: 24px;
 }
 .next-previous .previous {
   float: left;
@@ -5724,7 +5738,34 @@ ul.revision-history {
 .next-previous .next {
   float: right;
 }
-/* Flashmessage */
+/* Flashmessages*/
+.info,
+.warning {
+  padding: 0.5em 1em;
+  margin-top: 12px;
+  border-radius: 1em;
+}
+.info .flashmessage-icon,
+.warning .flashmessage-icon,
+.info .icon,
+.warning .icon {
+  font-size: 2em;
+  float: right;
+}
+.info p,
+.warning p {
+  margin: 12px;
+}
+.info {
+  background-color: aliceblue;
+  border: 0.5em solid lightblue;
+  color: lightblue;
+}
+.warning {
+  background-color: bisque;
+  border: 0.5em solid darksalmon;
+  color: darksalmon;
+}
 /* Footer */
 .outer-wrap-footer {
   background-color: #223440;

@@ -124,6 +124,20 @@
     #desinax-vgrid.column(@columns * 1 / 4 - 1);
 }
 
+/* Footer*/
+
+.footer-column-wrapper {
+    overflow: auto;
+    margin-bottom: 0.5em;
+}
+
+.footer-column {
+    #desinax-vgrid.column(@columns / 3);
+}
+
+.site-footer {
+    #desinax-vgrid.column(@columns);
+}
 
 /**
 * Responsive 1, 2, 3
@@ -165,24 +179,13 @@
         #desinax-vgrid.column(@columns - 2);
         #desinax-vgrid.push(1);
     }
-}
 
-/* Footer*/
-
-.footer-column {
-    #desinax-vgrid.column(@columns / 3);
-}
-
-.site-footer {
-    #desinax-vgrid.column(@columns);
-}
-
-/* Right and left float */
-
-.right {
-    // float: right;
-}
-
-.left {
-    // float: left;
+    .footer-column {
+        #desinax-vgrid.column(@columns - 2);
+        #desinax-vgrid.push(1);
+    }
+    .site-footer {
+        #desinax-vgrid.column(@columns - 2);
+        #desinax-vgrid.push(1);
+    }
 }

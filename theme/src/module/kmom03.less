@@ -23,7 +23,6 @@ a {
 p a {
     text-decoration: underline;
     &:hover {
-        color: #33f;
         text-decoration: none;
     }
 }
@@ -155,34 +154,33 @@ ul.revision-history {
     }
 }
 
-/* Flashmessage */
+/* Flashmessages*/
+.info,
+.warning {
+    padding: 0.5em 1em;
+    margin-top: @magicNumber / 2;
+    border-radius: 1em;
+    .flashmessage-icon,
+    .icon {
+        font-size: 2em;
+        float: right;
+    }
 
-// .inner-wrap-flash-message {
-//     width: 800px;
-//     margin: 20px auto 0;
-// }
-//
-// .flashmessage {
-//     border: 5px solid transparent;
-//     border-radius: 5px;
-//     padding: 0 10px;
-//     overflow: auto;
-// }
-//
-// .flashmessage p {
-//     margin: 24px 0;
-// }
-//
-// .flashmessage.info{
-//     background-color: lightblue;
-//     color: #205791;
-//     border-color: #205791;
-// }
-//
-// .flashmessage-icon {
-//     float: right;
-//     font-size: 3em;
-// }
+    p {
+        margin: @magicNumber / 2;
+    }
+}
+.info {
+    background-color: aliceblue;
+    border: 0.5em solid lightblue;
+    color: lightblue;
+}
+
+.warning {
+    background-color: bisque;
+    border: 0.5em solid darksalmon;
+    color: darksalmon;
+}
 
 /* Footer */
 
