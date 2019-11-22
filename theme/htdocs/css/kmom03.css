@@ -4996,7 +4996,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   right: 0;
 }
 .hgrid .inner-wrap {
-  background-image: url("../img/magic-number-24px.png");
+  background-image: url("../img/magic-number-22px.png");
 }
 /**
 * Base style to affect HTML elements on a general scale.
@@ -5006,14 +5006,14 @@ a.rm-button.rm-clicked .rm-button-face-2 {
  */
 html {
   overflow-y: scroll;
-  background-color: #424242;
+  background-color: #223440;
 }
 body {
   margin: 0;
   padding: 0;
   color: #333;
   background-color: #fff;
-  font: 16px/1.5 Verdana, Geneva, sans-serif;
+  font: 16px/1.375 Verdana, Geneva, sans-serif;
 }
 img {
   max-width: 100%;
@@ -5028,8 +5028,8 @@ h4,
 h5,
 h6 {
   font-family: Cambria, Georgia, Times, 'Times New Roman', serif;
-  margin-top: 24px;
-  margin-bottom: 24px;
+  margin-top: 22px;
+  margin-bottom: 22px;
 }
 h1 img,
 h2 img,
@@ -5041,10 +5041,10 @@ h6 img {
 }
 h1 {
   font-size: 2.375em;
-  line-height: 1.26315789;
+  line-height: 1.15789474;
   font-weight: normal;
   border-bottom: 1px solid #666;
-  margin-bottom: 23px;
+  margin-bottom: 21px;
 }
 h1 ~ h1,
 h1 ~ h2,
@@ -5052,58 +5052,58 @@ h1 ~ h3,
 h1 ~ h4,
 h1 ~ h5,
 h1 ~ h6 {
-  margin-top: 48px;
+  margin-top: 44px;
 }
 h1 + h2 {
-  margin-top: 24px;
+  margin-top: 22px;
 }
 h2 {
   font-size: 1.875em;
-  line-height: 1.6;
+  line-height: 1.46666667;
   font-weight: normal;
-  margin-bottom: 23px;
+  margin-bottom: 21px;
   border-bottom: 1px solid #CCC;
 }
 h2 + h3 {
-  margin-top: 24px;
+  margin-top: 22px;
 }
 h3 {
   font-size: 1.75em;
-  line-height: 1.71428571;
+  line-height: 1.57142857;
   font-weight: normal;
-  margin-bottom: 23px;
+  margin-bottom: 21px;
   border-bottom: 1px solid #EEE;
 }
 h3 + h4 {
-  margin-top: 24px;
+  margin-top: 22px;
 }
 h4 {
   font-size: 1.5em;
-  line-height: 1;
+  line-height: 1.83333333;
   font-weight: normal;
-  margin-bottom: 23px;
+  margin-bottom: 21px;
   border-bottom: 1px solid #EEE;
 }
 h4 + h5 {
-  margin-top: 24px;
+  margin-top: 22px;
 }
 h5 {
   font-size: 1.25em;
-  line-height: 1.2;
-  margin-bottom: 23px;
+  line-height: 1.1;
+  margin-bottom: 21px;
   border-bottom: 1px solid #EEE;
 }
 h5 + h6 {
-  margin-top: 24px;
+  margin-top: 22px;
 }
 h6 {
   font-size: 1.25em;
-  line-height: 1.2;
-  margin-bottom: 23px;
+  line-height: 1.1;
+  margin-bottom: 21px;
   border-bottom: 1px solid #EEE;
 }
 p {
-  margin-bottom: 24px;
+  margin-bottom: 22px;
 }
 small,
 .small,
@@ -5144,7 +5144,7 @@ blockquote {
   border-left: 4px solid #eee;
   padding-left: 1em;
   margin-left: 0;
-  margin-bottom: 24px;
+  margin-bottom: 22px;
 }
 pre,
 code,
@@ -5170,7 +5170,7 @@ pre code {
   white-space: pre;
 }
 pre {
-  margin-bottom: 24px;
+  margin-bottom: 22px;
 }
 pre code {
   display: block;
@@ -5180,21 +5180,21 @@ div.code,
 pre code {
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
-  margin-bottom: 23px;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  margin-bottom: 21px;
+  padding-top: 11px;
+  padding-bottom: 11px;
   padding-left: 0.5em;
   background-color: #eee;
 }
 ul,
 ol {
-  margin-bottom: 24px;
+  margin-bottom: 22px;
   padding-left: 1.5em;
 }
 ul p,
 ol p {
-  margin-top: 12px;
-  margin-bottom: 12px;
+  margin-top: 11px;
+  margin-bottom: 11px;
 }
 ul ul,
 ol ul,
@@ -5209,7 +5209,7 @@ ol {
   list-style-type: decimal;
 }
 dl {
-  margin-bottom: 24px;
+  margin-bottom: 22px;
 }
 dl.horizontal dt {
   clear: left;
@@ -5227,7 +5227,7 @@ article table,
 .table,
 .table1,
 .table2 {
-  margin-bottom: 24px;
+  margin-bottom: 22px;
 }
 table.full-width,
 article .table,
@@ -5248,7 +5248,7 @@ article table caption,
 .table caption,
 .table2 caption {
   font-size: 0.875em;
-  line-height: 1.71428571;
+  line-height: 1.57142857;
   text-align: left;
   font-style: italic;
 }
@@ -5270,7 +5270,7 @@ article table th,
 article table td,
 .table td,
 .table2 td {
-  padding: 6px;
+  padding: 5.5px;
 }
 article table tr,
 .table tr,
@@ -5294,8 +5294,8 @@ hr {
   border: 0;
   height: 1px;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-  margin-top: 35px;
-  margin-bottom: 36px;
+  margin-top: 32px;
+  margin-bottom: 33px;
 }
 hr::after {
   content: "§";
@@ -5408,7 +5408,7 @@ hr::after {
 /* Navbar */
 .rm-max.rm-navbar {
   position: absolute;
-  top: 24px;
+  top: 22px;
   right: 24px;
 }
 .rm-desktop {
@@ -5416,7 +5416,7 @@ hr::after {
 }
 .rm-desktop li a {
   padding: 0;
-  margin: 24px;
+  margin: 22px;
 }
 .rm-desktop li ul li a {
   margin-top: 0;
@@ -5429,7 +5429,7 @@ hr::after {
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
   object-fit: cover;
-  max-height: 192px;
+  max-height: 176px;
 }
 /* Breadcrumb */
 .region-breadcrumb {
@@ -5626,28 +5626,113 @@ p a:hover {
   text-decoration: none;
 }
 /* Header */
+.inner-wrap-header {
+  background-color: #223440;
+  color: #ccc;
+}
+.inner-wrap-header .row {
+  margin-bottom: 0;
+}
 .site-logo-text {
   font-size: 40px;
 }
 .site-logo-text a {
-  color: #333;
+  color: #ccc;
 }
 .site-logo-text a:hover {
   text-decoration: none;
 }
 /* Navbar */
 .rm-default li ul {
-  background-color: #fff;
+  background-color: #223440;
 }
 .rm-default li ul li {
   box-shadow: none;
 }
+/* Breadcrumb */
+.breadcrumb-list ul {
+  margin-top: 0;
+}
+.breadcrumb-list ul li {
+  display: inline-block;
+}
+.breadcrumb-list ul li::before {
+  content: " » ";
+}
 /* Main */
-/* Byline */
-/* Next and previous buttons */
 /* Sidebar */
+.me-image {
+  width: 100%;
+  margin-top: 1.5em;
+  margin-bottom: 4.5em;
+  margin-left: 0;
+}
+figcaption {
+  text-align: center;
+  font-style: italic;
+}
+figcaption p {
+  margin-top: 0;
+}
+.toc {
+  padding-left: 0;
+}
+.toc li {
+  padding-left: 22px;
+}
+.toc .section-header {
+  font-weight: 600;
+  padding-left: 0;
+  text-decoration: underline;
+}
+.toc .selected::before {
+  content: " » ";
+}
+/* Byline */
+.author-byline {
+  overflow: auto;
+  width: 100%;
+  border: 1px solid #666;
+}
+.author-byline figure {
+  margin-top: 21px;
+  float: left;
+}
+.author-byline figure .me-byline {
+  max-height: 6em;
+}
+.author-byline p {
+  margin-top: 21px;
+}
+/* Verktyg */
+.header-anchor {
+  display: none;
+}
+ul.revision-history {
+  margin-left: 22px;
+  color: #666;
+  margin-bottom: 22px;
+}
+/* Next and previous buttons */
+.next-previous {
+  overflow: auto;
+  margin-bottom: 22px;
+}
+.next-previous .previous {
+  float: left;
+}
+.next-previous .next {
+  float: right;
+}
 /* Flashmessage */
 /* Footer */
+.outer-wrap-footer {
+  background-color: #223440;
+  color: #ccc;
+}
+.outer-wrap-footer p a {
+  color: inherit;
+}
 /**
 * Internal responsive modules
 */
