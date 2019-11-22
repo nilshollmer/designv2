@@ -16,6 +16,7 @@
      background-color: #223440;
  }
 
+
 /* Hide submenu, leave this to kmom02 */
 .rm-desktop ul {
     display: none;
@@ -124,7 +125,7 @@
 .region-flash img {
     height: 200px;
     object-fit: cover;
-    width: 100%;
+    width: 100%
 }
 
 /* Breadcrumb */
@@ -284,6 +285,10 @@ a.revision-history {
     float: left;
     display: inline;
     width: 30%;
+}
+
+.region-sidebar-right img {
+    width: 100%
 }
 
 .region-sidebar-left {
