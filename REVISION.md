@@ -1,6 +1,13 @@
 Revision history
 ===================
 
+v3.0.0 (2019-11-24)
+---------------------
+
+* Added CSS to kmom03-stylesheet
+* Implement horizontal and vertical grid.
+* Add kmom03 report
+
 v2.0.1 (2019-11-16)
 ---------------------
 
