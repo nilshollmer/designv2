@@ -5648,6 +5648,10 @@ figcaption p {
 .author-byline p {
   margin-top: 23px;
 }
+/* Stylechooser*/
+.stylechooser fieldset p label select {
+  width: 100%;
+}
 /* Verktyg */
 .header-anchor {
   display: none;
