@@ -29,11 +29,11 @@ p a {
 
 /* Header */
 .inner-wrap-header {
-    background-color: @bgColorHtml;
-    color: @textColorHtml;
+    // background-color: @bgColorHtml;
+    // color: @textColorHtml;
 
     .row {
-        margin-bottom: 0;
+        margin-bottom: @magicNumber * 10;
     }
 }
 
@@ -47,34 +47,20 @@ p a {
     }
 }
 
-/* Navbar */
+/* Flash image */
 
-/* Navbar */
-
-.rm-max.rm-navbar {
-    position: absolute;
-    top: @magicNumber;
-    right: @magicNumber;
+.outer-wrap-flash {
+    display: none;
 }
 
-.rm-desktop {
-    text-align: center;
-
-    li a {
-    padding: 0;
-    margin: @magicNumber;
-    }
-
-    li ul li {
-        a {
-            margin-top: 0;
-        }
-    }
-}
+/* Navbar */
 
 .rm-default {
+    li {
+        display: block;
+    }
     li ul {
-        background-color: @bgColorHtml;
+        // background-color: @bgColorHtml;
         li {
             box-shadow: none;
         }
