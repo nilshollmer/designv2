@@ -65,9 +65,13 @@ p a {
     margin: @magicNumber;
     }
 
-    li ul li {
-        a {
-            margin-top: 0;
+    li ul {
+        background-color: @bgColorHtml;
+        li {
+            box-shadow: none;
+            a {
+                margin-top: 0;
+            }
         }
     }
 }
