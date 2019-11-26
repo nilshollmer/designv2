@@ -5027,7 +5027,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Cambria, Georgia, Times, 'Times New Roman', serif;
+  font-family: monospace;
   margin-top: 24px;
   margin-bottom: 24px;
 }
@@ -5405,22 +5405,6 @@ hr::after {
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
 }
-/* Navbar */
-.rm-max.rm-navbar {
-  position: absolute;
-  top: 24px;
-  right: 24px;
-}
-.rm-desktop {
-  text-align: center;
-}
-.rm-desktop li a {
-  padding: 0;
-  margin: 24px;
-}
-.rm-desktop li ul li a {
-  margin-top: 0;
-}
 /* Flash*/
 .region-flash img {
   display: inline;
@@ -5570,17 +5554,42 @@ p a:hover {
   text-decoration: none;
 }
 /* Header */
+.inner-wrap-header .region-header-col-1 {
+  display: inline;
+  float: left;
+  width: 40.625%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+  margin-left: 29.6875%;
+}
+.inner-wrap-header .region-header-col-2 {
+  display: none;
+}
+.inner-wrap-header .region-header-col-3 {
+  display: inline;
+  float: left;
+  width: 28.125%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+}
 .inner-wrap-header .row {
-  margin-bottom: 240px;
+  margin-bottom: 48px;
 }
 .site-logo-text {
-  font-size: 40px;
+  font-size: 192px;
+  font-family: monospace;
 }
 .site-logo-text a {
-  color: #706A6A;
+  text-shadow: none;
+  transition: text-shadow 2s ease;
+  color: #000;
 }
 .site-logo-text a:hover {
   text-decoration: none;
+  text-shadow: 24px 0 rgba(162, 162, 162, 0.3);
+}
+.site-logo-text a .site-logo-text-icon {
+  display: none;
 }
 /* Flash image */
 .outer-wrap-flash {
@@ -5589,6 +5598,9 @@ p a:hover {
 /* Navbar */
 .rm-default li {
   display: block;
+}
+.rm-default li a {
+  padding: 0;
 }
 .rm-default li ul li {
   box-shadow: none;
@@ -5701,9 +5713,11 @@ ul.revision-history {
   color: darksalmon;
 }
 /* Footer */
+.footer-column-wrapper {
+  display: none;
+}
 .outer-wrap-footer {
-  background-color: #C3C1C1;
-  color: #706A6A;
+  text-align: center;
 }
 .outer-wrap-footer p a {
   color: inherit;
