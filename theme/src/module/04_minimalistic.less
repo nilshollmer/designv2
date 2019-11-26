@@ -6,7 +6,23 @@
  */
 
 /* General */
-
+// .logo-fade-in (@repetition) when (@repetition > 0){
+//     &::after {
+//         content: "design";
+//         position: absolute;
+//         z-index: -1;
+//         top: 0;
+//         left: 10px;
+//         color: rgba(105,156,23, 0.0);
+//         transition: color 2s ease;
+//         .logo-fade-in(@repetition - 1);
+//     }
+//     &:hover {
+//         &::after {
+//             color: rgba(105,156,23, 0.5);
+//         }
+//     }
+// }
 /* Link */
 
 ul {
@@ -51,13 +67,19 @@ p a {
 .site-logo-text {
     font-size: @magicNumber * 8;
     font-family: @fontFamilyMonospace;
+
     a {
+        position: relative;
+        z-index: 1;
+        // .logo-fade-in(10);
+
         text-shadow: none;
         transition: text-shadow 2s ease;
         color: #000;
+
         &:hover {
             text-decoration: none;
-            text-shadow: @magicNumber 0 rgba(162,162,162,0.3);
+            text-shadow: @magicNumber -@magicNumber rgba(105,156,23,0.6);
         }
 
         .site-logo-text-icon {

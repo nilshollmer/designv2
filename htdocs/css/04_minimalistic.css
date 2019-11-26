@@ -5006,6 +5006,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
  */
 html {
   overflow-y: scroll;
+  overflow-x: hidden;
   background-color: #C3C1C1;
 }
 body {
@@ -5013,7 +5014,7 @@ body {
   padding: 0;
   color: #333;
   background-color: #fff;
-  font: 16px/1.5 Verdana, Geneva, sans-serif;
+  font: 16px/1.5 monospace;
 }
 img {
   max-width: 100%;
@@ -5580,13 +5581,15 @@ p a:hover {
   font-family: monospace;
 }
 .site-logo-text a {
+  position: relative;
+  z-index: 1;
   text-shadow: none;
   transition: text-shadow 2s ease;
   color: #000;
 }
 .site-logo-text a:hover {
   text-decoration: none;
-  text-shadow: 24px 0 rgba(162, 162, 162, 0.3);
+  text-shadow: 24px -24px rgba(105, 156, 23, 0.6);
 }
 .site-logo-text a .site-logo-text-icon {
   display: none;
