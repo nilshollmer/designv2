@@ -6,23 +6,8 @@
  */
 
 /* General */
-// .logo-fade-in (@repetition) when (@repetition > 0){
-//     &::after {
-//         content: "design";
-//         position: absolute;
-//         z-index: -1;
-//         top: 0;
-//         left: 10px;
-//         color: rgba(105,156,23, 0.0);
-//         transition: color 2s ease;
-//         .logo-fade-in(@repetition - 1);
-//     }
-//     &:hover {
-//         &::after {
-//             color: rgba(105,156,23, 0.5);
-//         }
-//     }
-// }
+
+
 /* Link */
 
 ul {
@@ -44,34 +29,20 @@ p a {
 }
 
 /* Header */
+
 .inner-wrap-header {
-
     .region-header-col-1 {
-        #desinax-vgrid.column(10);
-        #desinax-vgrid.push(7);
-    }
-
-    .region-header-col-2 {
-        display: none;
-    }
-
-    .region-header-col-3 {
-        #desinax-vgrid.column(7);
-    }
-
-    .row {
-        margin-bottom: @magicNumber * 2;
+        background-color: #76FF50;
     }
 }
 
 .site-logo-text {
-    font-size: @magicNumber * 8;
+    font-size: @fontSizeH1 * 5;
     font-family: @fontFamilyMonospace;
 
     a {
         position: relative;
         z-index: 1;
-        // .logo-fade-in(10);
 
         text-shadow: none;
         transition: text-shadow 2s ease;
@@ -79,7 +50,18 @@ p a {
 
         &:hover {
             text-decoration: none;
-            text-shadow: @magicNumber -@magicNumber rgba(105,156,23,0.6);
+            // color: #444444;
+            // text-shadow: 1px 0px 1px #41561F, 0px 1px 1px #699C17,
+            //              2px 1px 1px #41561F, 1px 2px 1px #699C17,
+            //              3px 2px 1px #41561F, 2px 3px 1px #699C17,
+            //              4px 3px 1px #41561F, 3px 4px 1px #699C17,
+            //              5px 4px 1px #41561F, 4px 5px 1px #699C17,
+            //              6px 5px 1px #41561F, 5px 6px 1px #699C17,
+            //              7px 6px 1px #41561F;
+            text-shadow: 0 -@magicNumber rgba(105,156,23,0.8),
+                         0 -@magicNumber*2 rgba(105,156,23,0.6),
+                         0 -@magicNumber*3 rgba(105,156,23,0.4),
+                         0 -@magicNumber*4 rgba(105,156,23,0.2);
         }
 
         .site-logo-text-icon {
@@ -90,12 +72,13 @@ p a {
 
 /* Flash image */
 
-.outer-wrap-flash {
-    display: none;
-}
-
 /* Navbar */
-
+.rm-clicked {
+    top: 0;
+    padding-top: 0;
+    width: 300px !important;
+    height: fit-content !important;
+}
 .rm-default {
     li {
         display: block;
@@ -243,10 +226,6 @@ ul.revision-history {
 }
 
 /* Footer */
-
-.footer-column-wrapper {
-    display: none;
-}
 
 .outer-wrap-footer {
     text-align: center;
