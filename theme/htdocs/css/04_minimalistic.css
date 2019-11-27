@@ -5528,17 +5528,15 @@ p a:hover {
 }
 /* Flash image */
 /* Navbar */
-.rm-clicked {
-  top: 0;
-  padding-top: 0;
-  width: 300px !important;
+.rm-mobile {
+  top: 0 !important;
+  transition-duration: 0.25s !important;
+  padding-top: 0 !important;
+  width: 250px !important;
   height: fit-content !important;
 }
 .rm-default li {
   display: block;
-}
-.rm-default li a {
-  padding: 0;
 }
 .rm-default li ul li {
   box-shadow: none;
