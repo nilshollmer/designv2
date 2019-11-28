@@ -54,6 +54,11 @@ return [
             "title" => "Verktyg och möjligheter för utveckling.",
         ],
         [
+            "text" => "Rapport",
+            "url" => "rapport",
+            "title" => "Rapporter under kursen.",
+        ],
+        [
             "text" => "Test",
             "url" => "test",
             "title" => "Test i att göra en ny sida.",
