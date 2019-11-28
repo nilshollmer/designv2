@@ -5022,6 +5022,9 @@ img {
 .site-logo {
   display: none;
 }
+code {
+  line-height: 1;
+}
 h1,
 h2,
 h3,
