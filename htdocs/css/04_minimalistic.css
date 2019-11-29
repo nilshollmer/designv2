@@ -5411,6 +5411,15 @@ hr::after {
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
 }
+/* Flash message*/
+.region-flash-message {
+  display: inline;
+  float: left;
+  width: 40.625%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+  margin-left: 29.6875%;
+}
 /* Main */
 .region-main {
   display: inline;
