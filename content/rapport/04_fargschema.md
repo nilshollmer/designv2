@@ -7,7 +7,7 @@ I följande rapport analyserar jag val av färgprofil och typografi hos tre popu
 
 Urval
 -----------------------
-Jag har valt att undersöka [Stockholms kulturhus][länk 1], [Liseberg i Göteborg][länk 2] och [Folkets Park i Malmö][länk 3].
+Jag har valt att undersöka [Kulturhuset Stadsteatern i Stockholm][länk 1], [Liseberg i Göteborg][länk 2] och [Folkets Park i Malmö][länk 3].
 Mitt urval baseras på denna lista med de [mest besökta turistmålen i Sverige 2009][länk 4], sammanställd av [Tillväxtverket][länk 5]. Jag är medveten om att listan är utdaterad men har valt den i brist på mer aktuell statistik och den räcker ändå som grund för min analys.
 
 Metod
@@ -19,11 +19,11 @@ Till mina färg-och textanalyser använder jag en två olika artiklar och böcke
 
 Resultat
 -----------------------
-### Stockholms kulturhus
+### Kulturhuset Stadsteatern
 
 [FIGURE src="img/kulturhuset_front.png " class="rapport-image" caption="Kulturhuset Startsida"]
 
-Stockholms kulturhus har en startsida bestående av en stor bakgrundsbild hämtad från en av deras senaste utställningar. Bakgrundsbilden är svart och olika nyanser av pastellrosa. I mitten av sidan står titeln på utställningen i vit text mot svart bakgrund och ovanför ser vi en vit sidmeny. När man skrollar längre ner på sidan ser man att de använder vita boxar med information och bilder.
+Kulturhuset Stadsteatern har en startsida bestående av en stor bakgrundsbild hämtad från en av deras senaste utställningar. Bakgrundsbilden är svart och olika nyanser av pastellrosa. I mitten av sidan står titeln på utställningen i vit text mot svart bakgrund och ovanför ser vi en vit sidmeny. När man skrollar längre ner på sidan ser man att de använder vita boxar med information och bilder.
 
 De har en tydlig röd accentfärg som täcker deras "call to action", biljettknappen, i sidmenyn. Den färgen återkommer även i deras logotyp och i andra illustrationer, om än i lite olika nyanser, och är deras således profilfärg. De har även en rad andra ljusa och klara kulörer som färglägger knapparna till andra delar av sidan. Dessa färger återkommer sedan i den ram som omger innehållet på respektive sida.
 
