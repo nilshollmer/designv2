@@ -3,4 +3,4 @@
 Rapporter
 =========================
 
-Detta innehåll är skrivet i markdown och du hittar innehållet i filen `content/rapport/00_index.md`.
+Här hittar du alla rapporter jag kommer skriva under kursens gång, från och med kursmoment 4 och framåt. God läsning!

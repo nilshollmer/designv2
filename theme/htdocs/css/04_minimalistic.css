@@ -5519,21 +5519,20 @@ p a:hover {
 /* Header */
 .inner-wrap-header .region-header-col-1 {
   background-color: #76FF50;
+  display: flex;
+  justify-content: center;
 }
 .site-logo-text {
-  font-size: 11.875em;
+  font-size: 11.875em "vw";
   font-family: monospace;
 }
 .site-logo-text a {
-  position: relative;
-  z-index: 1;
-  text-shadow: none;
+  text-shadow: 0 -12px #C2FFB2;
   transition: text-shadow 2s ease;
   color: #000;
 }
 .site-logo-text a:hover {
   text-decoration: none;
-  text-shadow: 0 -12px #C2FFB2;
 }
 .site-logo-text a .site-logo-text-icon {
   display: none;
