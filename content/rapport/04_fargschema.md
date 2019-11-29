@@ -141,7 +141,7 @@ Sammanfattning och analys
 
 Samtliga webbplatser har använt någon eller några nyanser av blått. Den färgen är vanligt förekommande på webbplatser som vill utstråla klarhet och pålitlighet. De har även gemensamt att de parat den blå färgen med ljus färg med en röd ton (röd, rosa och orange) för att lyfta fram delar av webbplatsen man vill att besökaren ska se.
 
-Stadshuset använder många färger för att representera ett stort utbud av kultur. Liseberg använder färger som påminner om deras välkända maskot. Folkets park använder mycket vitt utrymme och endast två färger vilket ger ett luftigt intryck.
+Kulturhuset Stadsteatern använder många färger för att representera ett stort utbud av kultur. Liseberg använder färger som påminner om deras välkända maskot. Folkets park använder mycket vitt utrymme och endast två färger vilket ger ett luftigt intryck.
 
 **Typografi:**
 
