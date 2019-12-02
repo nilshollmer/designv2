@@ -1,0 +1,354 @@
+/*!
+ * Stylesheet for design kmom02.
+ *
+ * This stylesheet is for the design course and kmom01. Fill it with style
+ * to style up the website so it is useable.
+ */
+
+/* General */
+
+
+/* Link */
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+p a {
+    text-decoration: underline;
+    &:hover {
+        text-decoration: none;
+    }
+}
+.outer-wrap{
+    display: block;
+
+    .row {
+        margin-bottom: 0;
+    }
+}
+/* Header */
+
+.inner-wrap-header {
+    .row {
+        .region-header-col-1 {
+            #desinax-vgrid.column(12);
+            #desinax-vgrid.push(6);
+        }
+
+        .region-header-col-2 {
+            #desinax-vgrid.column(12);
+            #desinax-vgrid.push(6);
+        }
+    }
+}
+
+.inner-wrap-header {
+    .region-header-col-1 {
+        display: flex !important;
+        justify-content: center !important;
+        background-color: @tertiaryColour;
+    }
+    .region-header-col-2 {
+        background-color: @secondaryColour;
+    }
+}
+
+.site-logo-text {
+    font-size: 10vw;
+    font-family: @fontFamilyMonospace;
+
+    a {
+        color: @primaryColour;
+
+        text-shadow: 0.2vw 0 @secondaryColour;
+        transition: text-shadow 2s ease;
+
+        &:hover {
+            text-decoration: none;
+        }
+
+        .site-logo-text-icon {
+            display: none;
+        }
+    }
+}
+
+/* Navbar */
+
+.rm-desktop {
+    text-align: center;
+    background-color: @secondaryColour;
+    color: #fff;
+
+    li ul {
+        background-color: @secondaryColour;
+        li {
+            box-shadow: none;
+        }
+    }
+}
+
+.rm-mobile {
+    background-color: @secondaryColour !important;
+    top: 0 !important;
+    transition-duration: 0.25s !important;
+    padding-top: 0 !important;
+    width: 250px !important;
+    height: fit-content !important;
+}
+
+.rm-button-face-1 {
+    color: @primaryColour;
+}
+
+.rm-button-face-2 {
+    color: @tertiaryColour;
+}
+
+
+/* Flash image */
+.outer-wrap-flash {
+    display: block;
+
+    .row {
+        margin-bottom: 0;
+    }
+}
+
+.region-flash {
+    #desinax-vgrid.column(12);
+    #desinax-vgrid.push(6);
+    max-height: 200px;
+
+    img {
+        max-height: 200px;
+        width: 100%;
+        position: relative;
+        object-fit: cover;
+    }
+}
+
+/* Breadcrumb */
+
+.region-breadcrumb {
+    #desinax-vgrid.column(12);
+    #desinax-vgrid.push(6);
+    margin-bottom: 0;
+    background-color: @tertiaryColour;
+    .breadcrumb-list ul {
+        margin-top: 0;
+
+        li {
+            display: inline-block;
+
+            a {
+                color: @primaryColour;
+            }
+
+            &::before {
+                content: " » ";
+            }
+        }
+    }
+}
+
+/* Main */
+
+.region-main {
+    #desinax-vgrid.column(12);
+    #desinax-vgrid.push(6);
+    &.has-sidebar-left {
+        #desinax-vgrid.push(0);
+    }
+    background-color: @secondaryColour;
+    color: #fff;
+
+    .article {
+        min-height: @magicNumber * 24;
+        padding-left: 12px;
+        padding-right: 12px;
+        code {
+            color: @secondaryColour;
+        }
+    }
+
+    a {
+        color: #fff;
+    }
+}
+
+/* Sidebar */
+
+.region-sidebar-left,
+.region-sidebar-right {
+    background-color: @secondaryColour;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    overflow: auto;
+
+    .block {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    a {
+        color: white;
+    }
+}
+
+.region-sidebar-right {
+    #desinax-vgrid.push(0);
+}
+
+.me-image {
+    width: 100%;
+    margin-top: 1.5em;
+    margin-bottom: 4.5em;
+    margin-left: 0;
+    background-color: @tertiaryColour;
+    border-radius: 5px;
+}
+
+figcaption {
+    text-align: center;
+    font-style: italic;
+    p {
+        margin-top: 0;
+    }
+}
+
+.toc {
+    padding-left: 0;
+
+    li {
+        padding-left: @magicNumber;
+    }
+
+    .section-header {
+        font-weight: 600;
+        padding-left: 0;
+        text-decoration: underline;
+    }
+
+    .selected::before {
+        content: " » ";
+    }
+
+}
+
+/* Byline */
+.region-main {
+    .block {
+        padding-left: 12px;
+        padding-right: 12px;
+        margin-bottom: @magicNumber;
+    }
+}
+
+.author-byline {
+    background-color: @secondaryColour;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    overflow: auto;
+    width: 100%;
+    border: 1px solid #666;
+
+    figure {
+        margin-top: @magicNumber - 1;
+        float: left;
+        .me-byline {
+            max-height: 6em;
+        }
+    }
+
+    p {
+        margin-top: @magicNumber - 1;
+    }
+}
+
+/* Stylechooser*/
+.stylechooser fieldset p label select {
+    width: 100%;
+}
+
+/* Verktyg */
+
+.header-anchor {
+    display: none;
+}
+
+ul.revision-history {
+    margin-left: @magicNumber;
+    color: #666;
+    // font-size: 1.2em;
+    margin-bottom: @magicNumber;
+}
+
+/* Next and previous buttons */
+
+.next-previous {
+    overflow: auto;
+    margin-bottom: @magicNumber;
+    .previous {
+        float: left;
+    }
+    .next {
+        float: right;
+    }
+}
+
+/* Flashmessages*/
+.info,
+.warning {
+    padding: 0.5em 1em;
+    margin-top: @magicNumber / 2;
+    border-radius: 1em;
+    .flashmessage-icon,
+    .icon {
+        font-size: 2em;
+        float: right;
+    }
+
+    p {
+        margin: @magicNumber / 2;
+    }
+}
+
+.info {
+    background-color: aliceblue;
+    border: 0.5em solid lightblue;
+    color: lightblue;
+}
+
+.warning {
+    background-color: bisque;
+    border: 0.5em solid darksalmon;
+    color: darksalmon;
+}
+
+/* Footer */
+
+.outer-wrap-footer {
+    text-align: center;
+    p a {
+        color: inherit;
+    }
+}
+
+.site-footer {
+    #desinax-vgrid.column(12);
+    #desinax-vgrid.push(6);
+    padding-bottom: @magicNumber * 2;
+    background-color: @tertiaryColour;
+    color: @primaryColour;
+}
