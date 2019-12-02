@@ -5449,7 +5449,6 @@ hr::after {
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
   margin-left: 29.6875%;
-  background-color: #76FF50;
 }
 .footer-column-wrapper {
   display: none;
@@ -5544,12 +5543,6 @@ p a:hover {
   padding-top: 0 !important;
   width: 250px !important;
   height: fit-content !important;
-}
-.rm-default li {
-  display: block;
-}
-.rm-default li ul li {
-  box-shadow: none;
 }
 /* Breadcrumb */
 .breadcrumb-list ul {
@@ -5664,6 +5657,9 @@ ul.revision-history {
 }
 .outer-wrap-footer p a {
   color: inherit;
+}
+.site-footer {
+  background-color: #76FF50;
 }
 /**
 * Internal responsive modules
