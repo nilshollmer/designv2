@@ -5815,6 +5815,15 @@ ul.revision-history {
   }
 }
 @media screen and (max-width: 1050px) {
+  .inner-wrap-header .row .region-header-col-1,
+  .inner-wrap-header .row .region-header-col-2 {
+    display: inline;
+    float: left;
+    width: 90.625%;
+    margin-left: 0.52083333%;
+    margin-right: 0.52083333%;
+    margin-left: 4.6875%;
+  }
   .region-main {
     display: inline;
     float: left;
@@ -5858,20 +5867,12 @@ ul.revision-history {
   }
 }
 @media screen and (max-width: 950px) {
-  .inner-wrap-header .region-header-col-1 {
-    display: inline;
-    float: left;
-    width: 57.29166667%;
-    margin-left: 0.52083333%;
-    margin-right: 0.52083333%;
-    margin-left: 21.35416667%;
+  .site-logo-text {
+    font-size: 20vw;
   }
-  .inner-wrap-header .region-header-col-3 {
-    display: inline;
-    float: left;
-    width: 19.79166667%;
-    margin-left: 0.52083333%;
-    margin-right: 0.52083333%;
+  .rm-default li a {
+    padding-left: 0;
+    padding-right: 0;
   }
   .site-footer {
     display: inline;
