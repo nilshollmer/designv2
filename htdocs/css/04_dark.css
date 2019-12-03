@@ -5498,6 +5498,9 @@ hr::after {
  * to style up the website so it is useable.
  */
 /* General */
+code {
+  color: #53574B;
+}
 /* Link */
 ul {
   list-style-type: none;

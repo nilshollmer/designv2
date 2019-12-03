@@ -1,6 +1,12 @@
 Revision history
 ===================
 
+v4.0.0 (2019-12-03)
+---------------------
+
+* Create minimalistic, dark and colourful themes
+* Add colourscheme report
+
 v3.0.0 (2019-11-24)
 ---------------------
 
