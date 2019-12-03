@@ -68,7 +68,7 @@ p a {
     a {
         color: @primaryColour;
 
-        text-shadow: 0.2vw 0 @secondaryColour;
+        text-shadow: 0.2vw 0 @complementaryColour;
         transition: text-shadow 2s ease;
 
         &:hover {
@@ -85,11 +85,11 @@ p a {
 
 .rm-desktop {
     text-align: center;
-    background-color: @secondaryColour;
-    color: #fff;
+    background-color: @complementaryColour;
+    color: #080807;
 
     li ul {
-        background-color: @secondaryColour;
+        background-color: @complementaryColour;
         li {
             box-shadow: none;
         }
@@ -168,13 +168,14 @@ p a {
     &.has-sidebar-left {
         #desinax-vgrid.push(0);
     }
+
     background-color: @secondaryColour;
     color: #fff;
-
+    box-sizing: border-box;
+    padding-left: @magicNumber;
+    padding-right: @magicNumber;
+    min-height: @magicNumber * 24;
     .article {
-        min-height: @magicNumber * 24;
-        padding-left: 12px;
-        padding-right: 12px;
         code {
             color: @secondaryColour;
         }
@@ -277,8 +278,10 @@ figcaption {
 }
 
 /* Stylechooser*/
-.stylechooser fieldset p label select {
-    width: 100%;
+.stylechooser {
+    fieldset p label select {
+        width: 100%;
+    }
 }
 
 /* Verktyg */
@@ -345,10 +348,25 @@ ul.revision-history {
     }
 }
 
-.site-footer {
-    #desinax-vgrid.column(12);
-    #desinax-vgrid.push(6);
-    padding-bottom: @magicNumber * 2;
-    background-color: @tertiaryColour;
+.region-footer {
+    // background-color: @tertiaryColour;
     color: @primaryColour;
+
+    .footer-column-wrapper {
+        display: block;
+        overflow: auto;
+
+        .footer-column {
+            #desinax-vgrid.column(@columns / 3);
+            box-sizing: border-box;
+            padding-left: @magicNumber;
+            padding-right: @magicNumber;
+        }
+    }
+
+    .site-footer {
+        #desinax-vgrid.column(12);
+        #desinax-vgrid.push(6);
+        padding-bottom: @magicNumber * 2;
+    }
 }

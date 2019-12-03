@@ -5007,13 +5007,13 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 html {
   overflow-y: scroll;
   overflow-x: hidden;
-  background-color: transparent;
+  background-color: #000500;
 }
 body {
   margin: 0;
   padding: 0;
   color: #333;
-  background-color: #fff;
+  background-color: #080807;
   font: 16px/1.5 MyriadPro-Regular, "Myriad Pro Regular", MyriadPro, 'Myriad Pro', Helvetica, Arial, sans-serif;
 }
 img {
@@ -5540,18 +5540,18 @@ p a:hover {
 .inner-wrap-header .region-header-col-1 {
   display: flex !important;
   justify-content: center !important;
-  background-color: #FFC300;
+  background-color: #080807;
 }
 .inner-wrap-header .region-header-col-2 {
-  background-color: #185B8E;
+  background-color: #53574B;
 }
 .site-logo-text {
   font-size: 10vw;
   font-family: monospace;
 }
 .site-logo-text a {
-  color: #FF450A;
-  text-shadow: 0.2vw 0 #185B8E;
+  color: #535452;
+  text-shadow: 0.2vw 0 #CC3608;
   transition: text-shadow 2s ease;
 }
 .site-logo-text a:hover {
@@ -5563,17 +5563,17 @@ p a:hover {
 /* Navbar */
 .rm-desktop {
   text-align: center;
-  background-color: #185B8E;
-  color: #fff;
+  background-color: #CC3608;
+  color: #080807;
 }
 .rm-desktop li ul {
-  background-color: #185B8E;
+  background-color: #CC3608;
 }
 .rm-desktop li ul li {
   box-shadow: none;
 }
 .rm-mobile {
-  background-color: #185B8E !important;
+  background-color: #53574B !important;
   top: 0 !important;
   transition-duration: 0.25s !important;
   padding-top: 0 !important;
@@ -5581,10 +5581,10 @@ p a:hover {
   height: fit-content !important;
 }
 .rm-button-face-1 {
-  color: #FF450A;
+  color: #535452;
 }
 .rm-button-face-2 {
-  color: #FFC300;
+  color: #080807;
 }
 /* Flash image */
 .outer-wrap-flash {
@@ -5617,7 +5617,7 @@ p a:hover {
   margin-right: 0.52083333%;
   margin-left: 25.52083333%;
   margin-bottom: 0;
-  background-color: #FFC300;
+  background-color: #080807;
 }
 .region-breadcrumb .breadcrumb-list ul {
   margin-top: 0;
@@ -5626,7 +5626,7 @@ p a:hover {
   display: inline-block;
 }
 .region-breadcrumb .breadcrumb-list ul li a {
-  color: #FF450A;
+  color: #535452;
 }
 .region-breadcrumb .breadcrumb-list ul li::before {
   content: " » ";
@@ -5639,27 +5639,26 @@ p a:hover {
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
   margin-left: 25.52083333%;
-  background-color: #185B8E;
+  background-color: #53574B;
   color: #fff;
+  box-sizing: border-box;
+  padding-left: 24px;
+  padding-right: 24px;
+  min-height: 576px;
 }
 .region-main.has-sidebar-left {
   margin-left: 0.52083333%;
 }
-.region-main .article {
-  min-height: 576px;
-  padding-left: 12px;
-  padding-right: 12px;
+.region-main .article code {
+  color: #53574B;
 }
 .region-main a {
   color: #fff;
 }
-code {
-  color: #185B8E;
-}
 /* Sidebar */
 .region-sidebar-left,
 .region-sidebar-right {
-  background-color: #185B8E;
+  background-color: #53574B;
   color: white;
   border: none;
   border-radius: 5px;
@@ -5682,7 +5681,7 @@ code {
   margin-top: 1.5em;
   margin-bottom: 4.5em;
   margin-left: 0;
-  background-color: #FFC300;
+  background-color: #080807;
   border-radius: 5px;
 }
 figcaption {
@@ -5713,7 +5712,7 @@ figcaption p {
   margin-bottom: 24px;
 }
 .author-byline {
-  background-color: #185B8E;
+  background-color: #53574B;
   color: white;
   border: none;
   border-radius: 5px;
@@ -5790,7 +5789,24 @@ ul.revision-history {
 .outer-wrap-footer p a {
   color: inherit;
 }
-.site-footer {
+.region-footer {
+  color: #535452;
+}
+.region-footer .footer-column-wrapper {
+  display: block;
+  overflow: auto;
+}
+.region-footer .footer-column-wrapper .footer-column {
+  display: inline;
+  float: left;
+  width: 32.29166667%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+  box-sizing: border-box;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.region-footer .site-footer {
   display: inline;
   float: left;
   width: 48.95833333%;
@@ -5798,8 +5814,6 @@ ul.revision-history {
   margin-right: 0.52083333%;
   margin-left: 25.52083333%;
   padding-bottom: 48px;
-  background-color: #FFC300;
-  color: #FF450A;
 }
 /**
 * Internal responsive modules

@@ -5650,11 +5650,11 @@ p a:hover {
   padding-left: 12px;
   padding-right: 12px;
 }
-.region-main .article code {
-  color: #185B8E;
-}
 .region-main a {
   color: #fff;
+}
+code {
+  color: #185B8E;
 }
 /* Sidebar */
 .region-sidebar-left,
