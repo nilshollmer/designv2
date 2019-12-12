@@ -1,5 +1,5 @@
 /*!
-* Stylesheet for design kmom03.
+* Stylesheet for design kmom05.
 *
 * This stylesheet is for the design course and kmom02 where we use LESS.
 */
@@ -5591,7 +5591,7 @@ p a:hover {
 }
 .rm-desktop li a {
   padding: 0;
-  margin: 24px;
+  margin: 24px 12px;
 }
 .rm-desktop li ul li a {
   margin-top: 0;

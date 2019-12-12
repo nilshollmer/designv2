@@ -33,10 +33,5 @@ return [
             "url" => "verktyg",
             "title" => "Verktyg och möjligheter för utveckling.",
         ],
-        [
-            "text" => "Blogg",
-            "url" => "blogg",
-            "title" => "Dagens Bild Blogg",
-        ],
     ],
 ];
