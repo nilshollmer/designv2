@@ -1,0 +1,99 @@
+/*!
+* Stylesheet for design kmom03.
+*
+* This stylesheet is for the design course and kmom02 where we use LESS.
+*/
+
+/**
+* Import mixins
+*/
+@import "mixin/clearfix.less";
+
+.clearfix() {
+    #design-mixin.clearfix();
+}
+
+/**
+* Normalize and reset the style.
+*/
+@import "normalize.css/normalize.less";
+
+/**
+* Font Awesome.
+*/
+@import "@fortawesome/fontawesome-free/less/fontawesome.less";
+@import "@fortawesome/fontawesome-free/less/solid.less";
+@import "@fortawesome/fontawesome-free/less/brands.less";
+
+
+
+/**
+* Import the typographic grid.
+*/
+@import "@desinax/typographic-grid/less/typography-font-families.less";
+@import "@desinax/typographic-grid/less/typography-defaults.less";
+
+/**
+* Import figure
+*/
+
+@import "@desinax/figure/less/figure.less";
+
+/**
+* A responsive menu.
+*/
+@import "@desinax/responsive-menu/less/responsive-menu.less";
+
+// Show the grid
+.hgrid .inner-wrap {
+    @gridImage: "../img/magic-number-@{magicNumber}.png";
+    #desinax-hgrid.showGrid(@gridImage);
+}
+
+/**
+* Base style to affect HTML elements on a general scale.
+*/
+
+@import "base/base_kmom03.less";
+
+/**
+* Import the vertical grid.
+*/
+@import "@desinax/vertical-grid/less/grid.less";
+@import "layout/vgrid.less";
+
+
+/**
+* Layout style for general structure of header, navbar, main, footer
+* and other regions of the page including route specific styles.
+*/
+@import "layout/regions.less";     // To add style for ?regions
+
+
+/**
+* Internal self contained modules, save in directory module/.
+*/
+@import "module/kmom03.less";
+
+/**
+* Internal responsive modules
+*/
+@import "layout/responsive_kmom03.less";
+
+/**
+* My own settings, not currently in their own module.
+*/
+
+// Adapt typographic grid to my style
+
+@fontFamilyHeadings: @fontFamilyCambria;
+@fontFamilyBody:     @fontFamilyVerdana;
+@fontFamilyCode:     @fontFamilyMonospace;
+
+// Magic number and base fontsize
+@magicNumber:  24px;  // 22px
+@fontSizeBody: 16px;
+
+@bgColorHtml: #223440;
+@textColorHtml: #ccc;
+// @bgColorBody: #CCD9FF;
