@@ -15,7 +15,7 @@ views:
         sort: 2
         data:
             dateFormat: j F Y
-            meta: 
+            meta:
                 type: toc
                 orderby: publishTime
                 orderorder: desc
@@ -25,12 +25,14 @@ views:
         template: anax/v2/blog-toc/default
         sort: 2
         data:
-            meta: 
+            meta:
                 type: copy
                 view: blog-list
 
 ---
-Nytt och Noterat
+Dagens Bild
 ===========================
 
-Kortare blogginlägg om vad som händer på dbwebb.se, kurserna samt webbprogrammering och webbutveckling med HTML, CSS, JavaScript, PHP och SQL i allmänhet.
+Välkommen till bloggen! Här postar jag bilder från min gamla telefon och berättar om dem! Det är blandade bilder från min senaste resa till Japan.
+
+**Häng med!**

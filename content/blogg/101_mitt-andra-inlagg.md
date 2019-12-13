@@ -1,5 +1,5 @@
 ---
-author: mos
+author: Nils Hollmer
 category:
     - utbildning
     - kursnyheter

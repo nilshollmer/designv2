@@ -1,28 +1,31 @@
 ---
-author: mos
+author: Nils Hollmer
 category:
-    - utbildning
-    - kursnyheter
-published: "2018-10-03"
+    - bilder
+    - japan
+published: "2019-12-13"
 ---
 Mitt första inlägg
 ==================================
 
-Här är mitt allra första blogg inlägg.
+[FIGURE src="image/gubbar.jpg" class=".w67 center" caption="Glada stengubbar"]
 
-Ett blogg-inlägg innehåller en tagg för `<!--more-->` som bestämmer vilken text som visas på förstasidan.
+Välkomna till min bildblogg! Först ut är dessa glada stengubbar från Sasaguri-Machi, utanför Fukuoka.
+
+Templet är känt för att ha världens största bronsstaty, en liggande Buddha som vilar sitt huvud i handen. Den statyn var svår att fånga på en enda bild på grund av sin storlek, men jag hittade många fina statyer på munkar där, alla unika och med säregna ansiktsuttryck.
 
 <!--more-->
 
-Sen handlar det om att skriva sina blogg-inlägg...
+
+Vi kan titta lite närmre på varje figurerna
 
 
 
-Rubrik 2 {#anchor-hit}
+Glada gubben i mitten {#anchor-hit}
 -----------------------------------
 
-Text.
-
+[FIGURE src="image/gubbar.jpg?w=400&h=400&crop-to-fit&area=20,38,60,10" class="right" caption=""]
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 
 ### Rubrik 3 {#vad-som}

@@ -1,3 +1,3 @@
-#### Nytt och Noterat
+#### Dagens Bild
 
-Kortare blogginlägg om vad som händer på dbwebb.se, kurserna samt webbprogrammering och webbutveckling med HTML, CSS, JavaScript, PHP och SQL i allmänhet.
+Senast jag hade en telefon med en helt okej kamera gjorde jag en resa till Japan. Alla bilder är tagna med en iPhone 7.
