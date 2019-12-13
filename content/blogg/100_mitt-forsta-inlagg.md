@@ -8,7 +8,7 @@ published: "2019-12-13"
 Mitt första inlägg
 ==================================
 
-[FIGURE src="image/gubbar.jpg" class=".w67 center" caption="Glada stengubbar"]
+[FIGURE src="image/gubbar.jpg" class="w67 center" caption="Glada stengubbar"]
 
 Välkomna till min bildblogg! Först ut är dessa glada stengubbar från Sasaguri-Machi, utanför Fukuoka.
 
@@ -16,18 +16,31 @@ Templet är känt för att ha världens största bronsstaty, en liggande Buddha 
 
 <!--more-->
 
+Bilden togs, som med alla bilder på den här bloggen, men min gamla iPhone 7 som tyvärr tragiskt förlorade hörseln och därmed sitt syfte. Kameran är 3.99mm och objektivet f/1.8 och filformatet är jpg. Jag är själv ingen höjdare på kameror men tycker om att fånga roliga saker på bild.
 
 Vi kan titta lite närmre på varje figurerna
 
-
-
-Glada gubben i mitten {#anchor-hit}
+De glada gubbarna {#anchor-hit}
 -----------------------------------
 
-[FIGURE src="image/gubbar.jpg?w=400&h=400&crop-to-fit&area=20,38,60,10" class="right" caption=""]
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+[FIGURE src="image/gubbar.jpg?w=300&h=300&crop-to-fit&area=20,38,60,10" class="w40 left" caption=""]
 
+Den här glada gubben tycker jag om. Han har en mustasch av ringar och en riktigt rak tandrad. Man kan tänka sig att han garvar åt ett skämt som någon drog eller bara en rolig tanke. Han ler verkligen med ögonen.
 
-### Rubrik 3 {#vad-som}
+Jag har beskurit bilden med CImage-klasserna `w=300&h=300&crop-to-fit&area=20,38,60,10"` och använder figure-klasserna `w40` och `left`.
 
-Text.
+[FIGURE src="image/gubbar.jpg?w=600&h=300&crop-to-fit&area=0,30,75,0&convolve=sharpen" class="w67 center" caption="Två gubbar som flamsar"]
+
+De här två gubbarna har jag skärpt till för att de var så flamsiga. Han till vänster klappar på sin kruka medans han till höger klagar på att han tappat sin hand.
+
+Jag har beskurit bilden med CImage-klasserna `w=600&h=200&crop-to-fit&area=0,40,80,10&convolve=sharpen"` och använder figure-klasserna `w67` och `center`.
+
+[FIGURE src="image/gubbar.jpg?w=c5&h=c5&crop-to-fit&area=20,0,0,60&r=180" class="w33 right" caption=""]
+
+Den här filuren skryter med sin stora peng så han får vara upp och ner. Jag använder CImage fördefinerade gridstorlekar för att ställa storleken på bilden.
+
+Jag har beskurit bilden med CImage-klasserna `w=c5&h=c5&crop-to-fit&area=20,0,0,60&r=180"` och använder figure-klasserna `w33` och `right`.
+
+### Effekter {#vad-som}
+
+I det här blogginlägget har jag fokuserat på att använda CImage för att beskära bilderna, lägga på ett skarpare filter, rotera och använda figure-klasser för placering.
