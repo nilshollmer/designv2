@@ -1,6 +1,13 @@
 Revision history
 ===================
 
+v5.0.0 (2019-12-14)
+---------------------
+
+* Create blog
+* Added CSS to kmom05-stylesheet
+* Add loading time report
+
 v4.0.0 (2019-12-03)
 ---------------------
 

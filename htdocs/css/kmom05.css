@@ -5135,7 +5135,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 html {
   overflow-y: scroll;
   overflow-x: hidden;
-  background-color: #223440;
+  background-color: #45544B;
 }
 body {
   margin: 0;
@@ -5687,7 +5687,7 @@ p a:hover {
 }
 /* Header */
 .inner-wrap-header {
-  background-color: #223440;
+  background-color: #45544B;
   color: #ccc;
 }
 .inner-wrap-header .row {
@@ -5719,7 +5719,7 @@ p a:hover {
   margin-top: 0;
 }
 .rm-default li ul {
-  background-color: #223440;
+  background-color: #45544B;
 }
 .rm-default li ul li {
   box-shadow: none;
@@ -5833,7 +5833,7 @@ ul.revision-history {
 }
 /* Footer */
 .outer-wrap-footer {
-  background-color: #223440;
+  background-color: #45544B;
   color: #ccc;
 }
 .outer-wrap-footer p a {
