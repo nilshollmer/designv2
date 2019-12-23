@@ -1,0 +1,219 @@
+/*!
+* Stylesheet for design kmom06 design-elements.
+*
+* This stylesheet is for the design course and kmom01. Fill it with style
+* to style up the website so it is useable.
+*/
+
+/* General */
+
+/* Link */
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+      text-decoration: underline;
+  }
+}
+
+p a {
+  text-decoration: underline;
+  &:hover {
+      text-decoration: none;
+  }
+}
+
+/* Header */
+.inner-wrap-header {
+  background-color: @bgColorHtml;
+  color: @textColorHtml;
+
+  .row {
+      margin-bottom: 0;
+  }
+}
+
+.site-logo-text {
+  font-size: 40px;
+  a {
+      color: @textColorHtml;
+      &:hover {
+          text-decoration: none;
+      }
+  }
+}
+
+/* Navbar */
+
+.rm-max.rm-navbar {
+    position: absolute;
+    top: @magicNumber;
+    right: @magicNumber;
+}
+
+.rm-desktop {
+    text-align: center;
+
+    li a {
+    padding: 0;
+    margin: @magicNumber (@magicNumber/2);
+    }
+
+    li ul li {
+        a {
+            margin-top: 0;
+        }
+    }
+}
+
+.rm-default {
+    li ul {
+        background-color: @bgColorHtml;
+        li {
+            box-shadow: none;
+        }
+    }
+}
+
+/* Breadcrumb */
+.breadcrumb-list ul {
+  margin-top: 0;
+
+  li {
+      display: inline-block;
+      &::before {
+          content: " » ";
+      }
+  }
+}
+
+/* Main */
+
+/* Sidebar */
+
+.me-image {
+  width: 100%;
+  margin-top: 1.5em;
+  margin-bottom: 4.5em;
+  margin-left: 0;
+}
+
+figcaption {
+  text-align: center;
+  font-style: italic;
+  p {
+      margin-top: 0;
+  }
+}
+
+.toc {
+  padding-left: 0;
+
+  li {
+      padding-left: @magicNumber;
+  }
+
+  .section-header {
+      font-weight: 600;
+      padding-left: 0;
+      text-decoration: underline;
+  }
+
+  .selected::before {
+      content: " » ";
+  }
+
+}
+
+/* Byline */
+
+.author-byline {
+  overflow: auto;
+  width: 100%;
+  border: 1px solid #666;
+
+  figure {
+      margin-top: @magicNumber - 1;
+      float: left;
+      .me-byline {
+          max-height: 6em;
+      }
+  }
+
+  p {
+      margin-top: @magicNumber - 1;
+  }
+}
+
+/* Stylechooser*/
+.stylechooser fieldset p label select {
+  width: 100%;
+}
+
+/* Verktyg */
+
+.header-anchor {
+  display: none;
+}
+
+ul.revision-history {
+  margin-left: @magicNumber;
+  color: #666;
+  // font-size: 1.2em;
+  margin-bottom: @magicNumber;
+}
+
+/* Next and previous buttons */
+
+.next-previous {
+  overflow: auto;
+  margin-bottom: @magicNumber;
+  .previous {
+      float: left;
+  }
+  .next {
+      float: right;
+  }
+}
+
+/* Flashmessages*/
+.info,
+.warning {
+  padding: 0.5em 1em;
+  margin-top: @magicNumber / 2;
+  border-radius: 1em;
+  .flashmessage-icon,
+  .icon {
+      font-size: 2em;
+      float: right;
+  }
+
+  p {
+      margin: @magicNumber / 2;
+  }
+}
+.info {
+  background-color: aliceblue;
+  border: 0.5em solid lightblue;
+  color: lightblue;
+}
+
+.warning {
+  background-color: bisque;
+  border: 0.5em solid darksalmon;
+  color: darksalmon;
+}
+
+/* Footer */
+
+.outer-wrap-footer {
+  background-color: @bgColorHtml;
+  color: @textColorHtml;
+  p a {
+      color: inherit;
+  }
+}

@@ -89,5 +89,24 @@ return [
             "url" => "blogg",
             "title" => "Dagens Bild Blogg",
         ],
+        [
+            "text" => "Design",
+            "url" => "design",
+            "title" => "Modelsida för att visa designelement-och principer",
+            "submenu" => [
+                "items" => [
+                    [
+                        "text" => "Designelement",
+                        "url" => "design-element",
+                        "title" => "Designelement i kmom06.",
+                    ],
+                    [
+                        "text" => "Designelement",
+                        "url" => "design-element",
+                        "title" => "Designelement i kmom06.",
+                    ],
+                ],
+            ],
+        ],
     ],
 ];
