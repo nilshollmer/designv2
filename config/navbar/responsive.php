@@ -91,18 +91,18 @@ return [
         ],
         [
             "text" => "Design",
-            "url" => "design",
+            "url" => "design/index",
             "title" => "Modelsida för att visa designelement-och principer",
             "submenu" => [
                 "items" => [
                     [
                         "text" => "Designelement",
-                        "url" => "design-element",
+                        "url" => "design/design-element",
                         "title" => "Designelement i kmom06.",
                     ],
                     [
                         "text" => "Designelement",
-                        "url" => "design-element",
+                        "url" => "design/design-element",
                         "title" => "Designelement i kmom06.",
                     ],
                 ],

@@ -5142,7 +5142,7 @@ body {
   padding: 0;
   color: #333;
   background-color: #fff;
-  font: 16px/1.5 Verdana, Geneva, sans-serif;
+  font: 18px/1.33333333 Verdana, Geneva, sans-serif;
 }
 img {
   max-width: 100%;
@@ -5173,7 +5173,7 @@ h6 img {
 }
 h1 {
   font-size: 2.375em;
-  line-height: 1.26315789;
+  line-height: 1.12280702;
   font-weight: normal;
   border-bottom: 1px solid #666;
   margin-bottom: 23px;
@@ -5191,7 +5191,7 @@ h1 + h2 {
 }
 h2 {
   font-size: 1.875em;
-  line-height: 1.6;
+  line-height: 1.42222222;
   font-weight: normal;
   margin-bottom: 23px;
   border-bottom: 1px solid #CCC;
@@ -5201,7 +5201,7 @@ h2 + h3 {
 }
 h3 {
   font-size: 1.75em;
-  line-height: 1.71428571;
+  line-height: 1.52380952;
   font-weight: normal;
   margin-bottom: 23px;
   border-bottom: 1px solid #EEE;
@@ -5211,7 +5211,7 @@ h3 + h4 {
 }
 h4 {
   font-size: 1.5em;
-  line-height: 1;
+  line-height: 1.77777778;
   font-weight: normal;
   margin-bottom: 23px;
   border-bottom: 1px solid #EEE;
@@ -5221,7 +5221,7 @@ h4 + h5 {
 }
 h5 {
   font-size: 1.25em;
-  line-height: 1.2;
+  line-height: 1.06666667;
   margin-bottom: 23px;
   border-bottom: 1px solid #EEE;
 }
@@ -5230,7 +5230,7 @@ h5 + h6 {
 }
 h6 {
   font-size: 1.25em;
-  line-height: 1.2;
+  line-height: 1.06666667;
   margin-bottom: 23px;
   border-bottom: 1px solid #EEE;
 }
@@ -5380,7 +5380,7 @@ article table caption,
 .table caption,
 .table2 caption {
   font-size: 0.875em;
-  line-height: 1.71428571;
+  line-height: 1.52380952;
   text-align: left;
   font-style: italic;
 }
@@ -5669,6 +5669,13 @@ hr::after {
 * to style up the website so it is useable.
 */
 /* General */
+@font-face {
+  font-family: 'Patrick Hand SC';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Patrick Hand SC'), local('PatrickHandSC-Regular'), url(https://fonts.gstatic.com/s/patrickhandsc/v7/0nkwC9f7MfsBiWcLtY65AWDK873ljiK-.ttf) format('truetype');
+}
 /* Link */
 ul {
   list-style-type: none;
@@ -5688,7 +5695,7 @@ p a:hover {
 /* Header */
 .inner-wrap-header {
   background-color: #fff;
-  color: #ccc;
+  color: #000;
 }
 .inner-wrap-header .row {
   margin-bottom: 0;
@@ -5697,7 +5704,7 @@ p a:hover {
   font-size: 40px;
 }
 .site-logo-text a {
-  color: #ccc;
+  color: #000;
 }
 .site-logo-text a:hover {
   text-decoration: none;
@@ -5724,6 +5731,9 @@ p a:hover {
 .rm-default li ul li {
   box-shadow: none;
 }
+.outer -wrap-flash {
+  display: none;
+}
 /* Breadcrumb */
 .breadcrumb-list ul {
   margin-top: 0;
@@ -5735,7 +5745,26 @@ p a:hover {
   content: " » ";
 }
 /* Main */
+.wrap-all {
+  background: url("../img/pinboard.jpg") center top;
+  font-family: 'Patrick Hand SC';
+  background-size: contain;
+}
+.region-main {
+  background: url("../img/square_paper2.png") top;
+  background-size: contain;
+  box-sizing: border-box;
+  padding-top: 24px;
+  padding-left: 48px;
+  padding-right: 24px;
+}
 /* Sidebar */
+.wrap-sidebar {
+  background: url("../img/paperslip.png") top;
+  background-size: cover;
+  box-sizing: border-box;
+  padding: 48px;
+}
 .me-image {
   width: 100%;
   margin-top: 1.5em;
@@ -5766,8 +5795,6 @@ figcaption p {
 /* Byline */
 .author-byline {
   overflow: auto;
-  width: 100%;
-  border: 1px solid #666;
 }
 .author-byline figure {
   margin-top: 23px;
@@ -5834,7 +5861,7 @@ ul.revision-history {
 /* Footer */
 .outer-wrap-footer {
   background-color: #fff;
-  color: #ccc;
+  color: #000;
 }
 .outer-wrap-footer p a {
   color: inherit;

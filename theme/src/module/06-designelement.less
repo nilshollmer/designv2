@@ -6,7 +6,7 @@
 */
 
 /* General */
-
+@import url('https://fonts.googleapis.com/css?family=Patrick+Hand+SC&display=swap');
 /* Link */
 
 ul {
@@ -79,6 +79,9 @@ p a {
     }
 }
 
+.outer  -wrap-flash {
+    display: none;
+}
 /* Breadcrumb */
 .breadcrumb-list ul {
   margin-top: 0;
@@ -93,7 +96,34 @@ p a {
 
 /* Main */
 
+.wrap-all {
+    background: url("../img/pinboard.jpg") center top;
+    font-family: 'Patrick Hand SC';
+    background-size: contain;
+}
+
+.region-main {
+    background: url("../img/square_paper2.png") top;
+    background-size: cover;
+    box-sizing: border-box;
+    padding-top: @magicNumber;
+    padding-left: @magicNumber * 2 ;
+    padding-right: @magicNumber ;
+}
+
+// .article,
+// .author-byline {
+//     padding-left: @magicNumber * 3;
+//     padding-right: @magicNumber;
+// }
 /* Sidebar */
+
+.wrap-sidebar {
+    background: url("../img/paperslip.png") top;
+    background-size: cover;
+    box-sizing: border-box;
+    padding: @magicNumber;
+}
 
 .me-image {
   width: 100%;
@@ -133,8 +163,6 @@ figcaption {
 
 .author-byline {
   overflow: auto;
-  width: 100%;
-  border: 1px solid #666;
 
   figure {
       margin-top: @magicNumber - 1;
