@@ -7,6 +7,12 @@
 
 /* General */
 @import url('https://fonts.googleapis.com/css?family=Patrick+Hand+SC&display=swap');
+
+.wrap-all {
+    background: url("../img/pinboard.jpg") center top;
+    font-family: "Patrick Hand SC";
+}
+
 /* Link */
 
 ul {
@@ -29,22 +35,25 @@ p a {
 
 /* Header */
 .inner-wrap-header {
-  background-color: @bgColorHtml;
-  color: @textColorHtml;
+    background-color: #fff;
+    background-color: rgba(255,255,255,0.6);
+    box-shadow: 0 4px 8px 0 black;
+    color: @textColorHtml;
 
-  .row {
-      margin-bottom: 0;
-  }
+    .row {
+      // margin-bottom: 0;
+    }
 }
 
 .site-logo-text {
-  font-size: 40px;
-  a {
-      color: @textColorHtml;
-      &:hover {
-          text-decoration: none;
-      }
-  }
+    font-size: 40px;
+
+    a {
+        color: @textColorHtml;
+        &:hover {
+            text-decoration: none;
+        }
+    }
 }
 
 /* Navbar */
@@ -79,10 +88,18 @@ p a {
     }
 }
 
-.outer  -wrap-flash {
-    display: none;
+.inner-wrap-flash {
+    box-shadow: 0 4px 8px 0 black;
 }
+
 /* Breadcrumb */
+.inner-wrap-breadcrumb {
+    background-color: #fff;
+    background-color: rgba(255,255,255,0.6);
+    box-shadow: 0 4px 8px 0 black;
+    color: @textColorHtml;
+}
+
 .breadcrumb-list ul {
   margin-top: 0;
 
@@ -96,41 +113,27 @@ p a {
 
 /* Main */
 
-.wrap-all {
-    background: url("../img/pinboard.jpg") center top;
-    font-family: 'Patrick Hand SC';
-    background-size: contain;
+.inner-wrap-main {
+    background-color: #fff;
+    background-color: rgba(255,255,255,0.6);
+    box-shadow: 0 4px 8px 0 black;
 }
 
-.region-main {
-    background: url("../img/square_paper2.png") top;
-    background-size: cover;
-    box-sizing: border-box;
-    padding-top: @magicNumber;
-    padding-left: @magicNumber * 2 ;
-    padding-right: @magicNumber ;
-}
-
-// .article,
-// .author-byline {
-//     padding-left: @magicNumber * 3;
-//     padding-right: @magicNumber;
-// }
-/* Sidebar */
-
-.wrap-sidebar {
-    background: url("../img/paperslip.png") top;
-    background-size: cover;
-    box-sizing: border-box;
-    padding: @magicNumber;
+.article,
+.block,
+.next-previous {
+    margin-left: @magicNumber / 2;
+    margin-right: @magicNumber / 2;
 }
 
 .me-image {
   width: 100%;
-  margin-top: 1.5em;
+  max-height: @magicNumber * 8;
+  margin-top: @magicNumber !important;
   margin-bottom: 4.5em;
   margin-left: 0;
 }
+
 
 figcaption {
   text-align: center;
@@ -239,9 +242,10 @@ ul.revision-history {
 /* Footer */
 
 .outer-wrap-footer {
-  background-color: @bgColorHtml;
-  color: @textColorHtml;
-  p a {
-      color: inherit;
-  }
+    background-color: #fff;
+    background-color: rgba(255,255,255,0.6);
+    color: @textColorHtml;
+    p a {
+        color: inherit;
+    }
 }

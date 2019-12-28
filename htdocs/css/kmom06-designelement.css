@@ -5135,7 +5135,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 html {
   overflow-y: scroll;
   overflow-x: hidden;
-  background-color: #fff;
+  background-color: #424242;
 }
 body {
   margin: 0;
@@ -5438,6 +5438,215 @@ hr::after {
   background-color: #fff;
 }
 /**
+* Internal self contained modules, save in directory module/.
+*/
+/*!
+* Stylesheet for design kmom06 design-elements.
+*
+* This stylesheet is for the design course and kmom01. Fill it with style
+* to style up the website so it is useable.
+*/
+/* General */
+@font-face {
+  font-family: 'Patrick Hand SC';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Patrick Hand SC'), local('PatrickHandSC-Regular'), url(https://fonts.gstatic.com/s/patrickhandsc/v7/0nkwC9f7MfsBiWcLtY65AWDK873ljiK-.ttf) format('truetype');
+}
+.wrap-all {
+  background: url("../img/pinboard.jpg") center top;
+  font-family: "Patrick Hand SC";
+}
+/* Link */
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+p a {
+  text-decoration: underline;
+}
+p a:hover {
+  text-decoration: none;
+}
+/* Header */
+.inner-wrap-header {
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 4px 8px 0 black;
+  color: #000;
+}
+.site-logo-text {
+  font-size: 40px;
+}
+.site-logo-text a {
+  color: #000;
+}
+.site-logo-text a:hover {
+  text-decoration: none;
+}
+/* Navbar */
+.rm-max.rm-navbar {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+.rm-desktop {
+  text-align: center;
+}
+.rm-desktop li a {
+  padding: 0;
+  margin: 24px 12px;
+}
+.rm-desktop li ul li a {
+  margin-top: 0;
+}
+.rm-default li ul {
+  background-color: #424242;
+}
+.rm-default li ul li {
+  box-shadow: none;
+}
+.inner-wrap-flash {
+  box-shadow: 0 4px 8px 0 black;
+}
+/* Breadcrumb */
+.inner-wrap-breadcrumb {
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 4px 8px 0 black;
+  color: #000;
+}
+.breadcrumb-list ul {
+  margin-top: 0;
+}
+.breadcrumb-list ul li {
+  display: inline-block;
+}
+.breadcrumb-list ul li::before {
+  content: " » ";
+}
+/* Main */
+.inner-wrap-main {
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 4px 8px 0 black;
+}
+.article,
+.block,
+.next-previous {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+.me-image {
+  width: 100%;
+  max-height: 192px;
+  margin-top: 24px !important;
+  margin-bottom: 4.5em;
+  margin-left: 0;
+}
+figcaption {
+  text-align: center;
+  font-style: italic;
+}
+figcaption p {
+  margin-top: 0;
+}
+.toc {
+  padding-left: 0;
+}
+.toc li {
+  padding-left: 24px;
+}
+.toc .section-header {
+  font-weight: 600;
+  padding-left: 0;
+  text-decoration: underline;
+}
+.toc .selected::before {
+  content: " » ";
+}
+/* Byline */
+.author-byline {
+  overflow: auto;
+}
+.author-byline figure {
+  margin-top: 23px;
+  float: left;
+}
+.author-byline figure .me-byline {
+  max-height: 6em;
+}
+.author-byline p {
+  margin-top: 23px;
+}
+/* Stylechooser*/
+.stylechooser fieldset p label select {
+  width: 100%;
+}
+/* Verktyg */
+.header-anchor {
+  display: none;
+}
+ul.revision-history {
+  margin-left: 24px;
+  color: #666;
+  margin-bottom: 24px;
+}
+/* Next and previous buttons */
+.next-previous {
+  overflow: auto;
+  margin-bottom: 24px;
+}
+.next-previous .previous {
+  float: left;
+}
+.next-previous .next {
+  float: right;
+}
+/* Flashmessages*/
+.info,
+.warning {
+  padding: 0.5em 1em;
+  margin-top: 12px;
+  border-radius: 1em;
+}
+.info .flashmessage-icon,
+.warning .flashmessage-icon,
+.info .icon,
+.warning .icon {
+  font-size: 2em;
+  float: right;
+}
+.info p,
+.warning p {
+  margin: 12px;
+}
+.info {
+  background-color: aliceblue;
+  border: 0.5em solid lightblue;
+  color: lightblue;
+}
+.warning {
+  background-color: bisque;
+  border: 0.5em solid darksalmon;
+  color: darksalmon;
+}
+/* Footer */
+.outer-wrap-footer {
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.6);
+  color: #000;
+}
+.outer-wrap-footer p a {
+  color: inherit;
+}
+/**
 * Import the vertical grid.
 */
 /**
@@ -5658,213 +5867,6 @@ hr::after {
   background-color: #b5dce1;
   border: 1px solid #6cbac4;
   color: #111;
-}
-/**
-* Internal self contained modules, save in directory module/.
-*/
-/*!
-* Stylesheet for design kmom06 design-elements.
-*
-* This stylesheet is for the design course and kmom01. Fill it with style
-* to style up the website so it is useable.
-*/
-/* General */
-@font-face {
-  font-family: 'Patrick Hand SC';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Patrick Hand SC'), local('PatrickHandSC-Regular'), url(https://fonts.gstatic.com/s/patrickhandsc/v7/0nkwC9f7MfsBiWcLtY65AWDK873ljiK-.ttf) format('truetype');
-}
-/* Link */
-ul {
-  list-style-type: none;
-}
-a {
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
-p a {
-  text-decoration: underline;
-}
-p a:hover {
-  text-decoration: none;
-}
-/* Header */
-.inner-wrap-header {
-  background-color: #fff;
-  color: #000;
-}
-.inner-wrap-header .row {
-  margin-bottom: 0;
-}
-.site-logo-text {
-  font-size: 40px;
-}
-.site-logo-text a {
-  color: #000;
-}
-.site-logo-text a:hover {
-  text-decoration: none;
-}
-/* Navbar */
-.rm-max.rm-navbar {
-  position: absolute;
-  top: 24px;
-  right: 24px;
-}
-.rm-desktop {
-  text-align: center;
-}
-.rm-desktop li a {
-  padding: 0;
-  margin: 24px 12px;
-}
-.rm-desktop li ul li a {
-  margin-top: 0;
-}
-.rm-default li ul {
-  background-color: #fff;
-}
-.rm-default li ul li {
-  box-shadow: none;
-}
-.outer -wrap-flash {
-  display: none;
-}
-/* Breadcrumb */
-.breadcrumb-list ul {
-  margin-top: 0;
-}
-.breadcrumb-list ul li {
-  display: inline-block;
-}
-.breadcrumb-list ul li::before {
-  content: " » ";
-}
-/* Main */
-.wrap-all {
-  background: url("../img/pinboard.jpg") center top;
-  font-family: 'Patrick Hand SC';
-  background-size: contain;
-}
-.region-main {
-  background: url("../img/square_paper2.png") top;
-  background-size: contain;
-  box-sizing: border-box;
-  padding-top: 24px;
-  padding-left: 48px;
-  padding-right: 24px;
-}
-/* Sidebar */
-.wrap-sidebar {
-  background: url("../img/paperslip.png") top;
-  background-size: cover;
-  box-sizing: border-box;
-  padding: 48px;
-}
-.me-image {
-  width: 100%;
-  margin-top: 1.5em;
-  margin-bottom: 4.5em;
-  margin-left: 0;
-}
-figcaption {
-  text-align: center;
-  font-style: italic;
-}
-figcaption p {
-  margin-top: 0;
-}
-.toc {
-  padding-left: 0;
-}
-.toc li {
-  padding-left: 24px;
-}
-.toc .section-header {
-  font-weight: 600;
-  padding-left: 0;
-  text-decoration: underline;
-}
-.toc .selected::before {
-  content: " » ";
-}
-/* Byline */
-.author-byline {
-  overflow: auto;
-}
-.author-byline figure {
-  margin-top: 23px;
-  float: left;
-}
-.author-byline figure .me-byline {
-  max-height: 6em;
-}
-.author-byline p {
-  margin-top: 23px;
-}
-/* Stylechooser*/
-.stylechooser fieldset p label select {
-  width: 100%;
-}
-/* Verktyg */
-.header-anchor {
-  display: none;
-}
-ul.revision-history {
-  margin-left: 24px;
-  color: #666;
-  margin-bottom: 24px;
-}
-/* Next and previous buttons */
-.next-previous {
-  overflow: auto;
-  margin-bottom: 24px;
-}
-.next-previous .previous {
-  float: left;
-}
-.next-previous .next {
-  float: right;
-}
-/* Flashmessages*/
-.info,
-.warning {
-  padding: 0.5em 1em;
-  margin-top: 12px;
-  border-radius: 1em;
-}
-.info .flashmessage-icon,
-.warning .flashmessage-icon,
-.info .icon,
-.warning .icon {
-  font-size: 2em;
-  float: right;
-}
-.info p,
-.warning p {
-  margin: 12px;
-}
-.info {
-  background-color: aliceblue;
-  border: 0.5em solid lightblue;
-  color: lightblue;
-}
-.warning {
-  background-color: bisque;
-  border: 0.5em solid darksalmon;
-  color: darksalmon;
-}
-/* Footer */
-.outer-wrap-footer {
-  background-color: #fff;
-  color: #000;
-}
-.outer-wrap-footer p a {
-  color: inherit;
 }
 /**
 * Internal responsive modules
