@@ -1,5 +1,5 @@
 /*!
-* Stylesheet for design kmom06, Designelement.
+* Stylesheet for design kmom06 designprinciples.
 *
 * This stylesheet is for the design course and kmom02 where we use LESS.
 */
@@ -26,35 +26,12 @@
 @import "@fortawesome/fontawesome-free/less/brands.less";
 
 
+
 /**
 * Import the typographic grid.
 */
 @import "@desinax/typographic-grid/less/typography-font-families.less";
 @import "@desinax/typographic-grid/less/typography-defaults.less";
-
-/**
- * Figure and figcaption for images and other media using figure/figcaption
- */
-
-@import "@desinax/figure/less/asciinema.less";
-@import "@desinax/figure/less/codepen.less";
-@import "@desinax/figure/less/figure.less";
-
-// Enable style from the module and optinally add customized layout
-figure.figure {
-    #desinax-figure.figure();
-}
-
-figure.asciinema {
-    &:extend(figure.figure);
-    #desinax-figure.asciinema();
-}
-
-figure.codepen,
-figure.figure-codepen {
-    &:extend(figure.figure);
-    #desinax-figure.codepen();
-}
 
 /**
 * A responsive menu.
@@ -73,18 +50,16 @@ figure.figure-codepen {
 
 @import "base/base_kmom06.less";
 
-
 /**
 * Internal self contained modules, save in directory module/.
 */
-@import "module/06-designelement.less";
-
+@import "module/06-designprinciples.less";
 
 /**
 * Import the vertical grid.
 */
 @import "@desinax/vertical-grid/less/grid.less";
-@import "layout/vgrid.less";
+@import "layout/vgrid_designprinciples.less";
 
 
 /**
@@ -94,25 +69,29 @@ figure.figure-codepen {
 @import "layout/regions.less";     // To add style for ?regions
 
 
+
 /**
 * Internal responsive modules
 */
-@import "layout/responsive_kmom03.less";
+@import "layout/responsive_kmom06.less";
 
 /**
 * My own settings, not currently in their own module.
 */
 
 // Adapt typographic grid to my style
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
 
-@fontFamilyHeadings: @fontFamilyCambria;
-@fontFamilyBody:     @fontFamilyVerdana;
+@fontFamilyHeadings: "Permanent Marker";
+@fontFamilyBody:     @fontFamilyMonospace;
 @fontFamilyCode:     @fontFamilyMonospace;
 
 // Magic number and base fontsize
 @magicNumber:  24px;  // 22px
-@fontSizeBody: 18px;
+@fontSizeBody: 16px;
 
-// @bgColorHtml: #fff;
-@textColorHtml: #000;
-// @bgColorBody: #45544B;
+@bgColorHtml: #fff;
+@bgColorPrimary: #dd1f25;
+@bgColorSecondary: #f1ff4c;
+@textColorHtml: #706A6A;
+// @bgColorBody: #CCD9FF;

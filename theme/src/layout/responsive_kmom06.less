@@ -1,0 +1,110 @@
+/**
+ * Layout for responsive style through media queries on kmom06.
+ */
+
+/* Main and sidebar layout */
+
+
+@media screen and (max-width: 1150px) {
+    .rm-desktop li a {
+        margin-left: @magicNumber / 2;
+        margin-right: @magicNumber / 2;
+        }
+}
+
+@media screen and (max-width: 1050px) {
+    .inner-wrap-header {
+        .row {
+            .region-header-col-1,
+            .region-header-col-2 {
+                #desinax-vgrid.column(@columns - 2);
+                #desinax-vgrid.push(1);
+            }
+        }
+    }
+
+    .region-main {
+        #desinax-vgrid.column(@columns - 2);
+        #desinax-vgrid.push(1);
+
+        &.has-sidebar-left.has-sidebar-right {
+            #desinax-vgrid.column(@columns - 2);
+            #desinax-vgrid.push(1);
+        }
+    }
+
+    .region-sidebar-left {
+        #desinax-vgrid.column(@columns - 2);
+        #desinax-vgrid.push(1);
+    }
+
+    .region-sidebar-right {
+        #desinax-vgrid.column(@columns - 2);
+        #desinax-vgrid.push(1);
+    }
+
+    .region-sidebar-left.has-sidebar-right,
+    .region-sidebar-right.has-sidebar-left {
+        #desinax-vgrid.column(@columns - 2);
+        #desinax-vgrid.push(1);
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .site-logo-text {
+        font-size: 20vw;
+    }
+
+    .rm-default {
+        li a {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+    .site-footer {
+        #desinax-vgrid.column(14);
+        #desinax-vgrid.push(5);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .region-main {
+        &.has-sidebar-right,
+        &.has-sidebar-left {
+        #desinax-vgrid.column(@columns - 2);
+        #desinax-vgrid.push(1);
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .region-header-col-1 {
+        #desinax-vgrid.column(@columns - 2);
+    }
+
+    .region-header-col-2 {
+        display: none;
+    }
+
+    .region-header-col-3 {
+        #desinax-vgrid.column(2);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .inner-wrap-header {
+        .region-header-col-1 {
+            #desinax-vgrid.column(@columns);
+            #desinax-vgrid.push(0);
+        }
+
+        .region-header-col-3 {
+            #desinax-vgrid.column(0);
+        }
+    }
+
+    .site-footer {
+        #desinax-vgrid.column(@columns);
+        #desinax-vgrid.push(0);
+    }
+}

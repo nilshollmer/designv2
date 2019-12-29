@@ -1,0 +1,250 @@
+/*!
+ * Stylesheet for design kmom02.
+ *
+ * This stylesheet is for the design course and kmom01. Fill it with style
+ * to style up the website so it is useable.
+ */
+
+/* General */
+
+.wrap-all {
+    background: url("../img/manga3.png") fixed top;
+    background-size: cover;
+}
+
+/* Link */
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+p a {
+    text-decoration: underline;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+/* Header */
+
+.inner-wrap-header {
+    .region-header-col-1 {
+        background-color: @bgColorPrimary;
+        display: flex !important;
+        justify-content: center !important;
+    }
+
+    .region-header-col-2 {
+        background-color: @bgColorHtml;
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+}
+
+.site-logo-text {
+    font-size: 12vw;
+    font-family: @fontFamilyHeadings;
+
+    a {
+        text-shadow: 0 -0.5vw @bgColorSecondary;
+        transition: text-shadow 2s ease;
+        color: #000;
+
+        &:hover {
+            text-decoration: none;
+        }
+
+        .site-logo-text-icon {
+            display: none;
+        }
+    }
+}
+
+/* Flash image */
+
+/* Navbar */
+.rm-desktop {
+    li ul li {
+        background-color: @bgColorHtml;
+    }
+}
+
+.rm-button-face-1,
+.rm-button-face-2 {
+    color: @bgColorSecondary;
+}
+
+.rm-mobile {
+    top: 0 !important;
+    transition-duration: 0.25s !important;
+    padding-top: 0 !important;
+    width: 250px !important;
+    height: fit-content !important;
+}
+
+/* Breadcrumb */
+.region-breadcrumb {
+    background-color: @bgColorHtml;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.breadcrumb-list ul {
+    margin-top: 0;
+
+    li {
+        display: inline-block;
+        &::before {
+            content: " » ";
+        }
+    }
+}
+
+/* Main */
+
+.region-main {
+    background-color: @bgColorHtml;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Sidebar */
+
+.wrap-sidebar {
+    box-sizing: border-box;
+    padding-left: @magicNumber/2;
+    padding-right: @magicNumber/2;
+    background-color: @bgColorSecondary;
+}
+.me-image {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 4.5em;
+    margin-left: 0;
+}
+
+figcaption {
+    text-align: center;
+    font-style: italic;
+    p {
+        margin-top: 0;
+    }
+}
+
+.toc {
+    padding-left: 0;
+
+    li {
+        padding-left: @magicNumber;
+    }
+
+    .section-header {
+        font-weight: 600;
+        padding-left: 0;
+        text-decoration: underline;
+    }
+
+    .selected::before {
+        content: " » ";
+    }
+
+}
+
+/* Byline */
+
+.author-byline {
+    overflow: auto;
+    width: 100%;
+    border: 1px solid #666;
+
+    figure {
+        margin-top: @magicNumber - 1;
+        float: left;
+        .me-byline {
+            max-height: 6em;
+        }
+    }
+
+    p {
+        margin-top: @magicNumber - 1;
+    }
+}
+
+/* Stylechooser*/
+.stylechooser fieldset p label select {
+    width: 100%;
+}
+
+/* Verktyg */
+
+.header-anchor {
+    display: none;
+}
+
+ul.revision-history {
+    margin-left: @magicNumber;
+    color: #666;
+    // font-size: 1.2em;
+    margin-bottom: @magicNumber;
+}
+
+/* Next and previous buttons */
+
+.next-previous {
+    overflow: auto;
+    margin-bottom: @magicNumber;
+    .previous {
+        float: left;
+    }
+    .next {
+        float: right;
+    }
+}
+
+/* Flashmessages*/
+.info,
+.warning {
+    padding: 0.5em 1em;
+    margin-top: @magicNumber / 2;
+    border-radius: 1em;
+    .flashmessage-icon,
+    .icon {
+        font-size: 2em;
+        float: right;
+    }
+
+    p {
+        margin: @magicNumber / 2;
+    }
+}
+
+.info {
+    background-color: aliceblue;
+    border: 0.5em solid lightblue;
+    color: lightblue;
+}
+
+.warning {
+    background-color: bisque;
+    border: 0.5em solid darksalmon;
+    color: darksalmon;
+}
+
+/* Footer */
+
+.outer-wrap-footer {
+    text-align: center;
+    // background-color: @bgColorHtml;
+    // color: @textColorHtml;
+    p a {
+        color: inherit;
+    }
+}
+
+.site-footer {
+    background-color: @bgColorPrimary;
+}

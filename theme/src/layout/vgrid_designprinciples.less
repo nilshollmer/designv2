@@ -1,0 +1,96 @@
+/**
+* Layout using vgrid from @desinax
+*/
+
+/**
+* Variables
+*/
+
+/**
+* General layout
+*/
+
+.row {
+    #desinax-vgrid.row();
+    // background-color: #0f0;
+    margin-bottom: @magicNumber / 2;
+}
+
+.inner-wrap {
+    #desinax-vgrid.grid(100%);
+}
+
+.vgrid .inner-wrap {
+    #desinax-vgrid.showGrid("../img/grid_24x30x10-nomargin.png");
+}
+
+/* Header */
+
+.inner-wrap-header {
+    .region-header-col-1 {
+        #desinax-vgrid.column(10);
+        #desinax-vgrid.push(7);
+    }
+
+    .region-header-col-2 {
+        #desinax-vgrid.column(10);
+        #desinax-vgrid.push(7);
+    }
+
+    .region-header-col-3 {
+        #desinax-vgrid.column(7);
+    }
+
+    .row {
+        margin-bottom: @magicNumber * 2;
+    }
+}
+
+/* Flash*/
+
+.outer-wrap-flash {
+    display: none;
+}
+
+/* Breadcrumb */
+
+.region-breadcrumb {
+    #desinax-vgrid.column(10);
+    #desinax-vgrid.push(7);
+}
+
+/* Flash message*/
+
+.region-flash-message {
+        #desinax-vgrid.column(10);
+        #desinax-vgrid.push(7);
+}
+
+/* Main */
+
+.region-main {
+    #desinax-vgrid.column(10);
+    #desinax-vgrid.push(7);
+    &.has-sidebar-left {
+        #desinax-vgrid.push(1);
+    }
+}
+
+/* Sidebar */
+
+.region-sidebar-left,
+.region-sidebar-right {
+    #desinax-vgrid.column(5);
+    #desinax-vgrid.push(1);
+}
+
+/* Footer*/
+
+.site-footer {
+    #desinax-vgrid.column(10);
+    #desinax-vgrid.push(7);
+}
+
+.footer-column-wrapper {
+    display: none;
+}
