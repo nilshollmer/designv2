@@ -5342,6 +5342,8 @@ p a:hover {
 /* Header */
 .inner-wrap-header .region-header-col-1 {
   background-color: #dd1f25;
+  border: 4px solid black;
+  border-radius: 24px;
   display: flex !important;
   justify-content: center !important;
 }
@@ -5404,11 +5406,13 @@ p a:hover {
   box-sizing: border-box;
   padding-left: 12px;
   padding-right: 12px;
-  background-color: #f1ff4c;
+  background-color: #fff;
+  border: 4px solid black;
+  border-radius: 24px;
 }
 .me-image {
   width: 100%;
-  margin-top: 0;
+  margin-top: 24px;
   margin-bottom: 4.5em;
   margin-left: 0;
 }
@@ -5712,6 +5716,14 @@ ul.revision-history {
 @media screen and (max-width: 1050px) {
   .inner-wrap-header .row .region-header-col-1,
   .inner-wrap-header .row .region-header-col-2 {
+    display: inline;
+    float: left;
+    width: 90.625%;
+    margin-left: 0.52083333%;
+    margin-right: 0.52083333%;
+    margin-left: 4.6875%;
+  }
+  .region-breadcrumb {
     display: inline;
     float: left;
     width: 90.625%;

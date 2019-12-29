@@ -1,6 +1,13 @@
 Revision history
 ===================
 
+v6.0.0 (2019-12-29)
+---------------------
+
+* Add design principle report
+* Create own design element stylesheet and report
+* Create own design principle stylesheet and report
+
 v5.0.0 (2019-12-14)
 ---------------------
 

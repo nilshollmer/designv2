@@ -5638,13 +5638,11 @@ ul.revision-history {
   color: darksalmon;
 }
 /* Footer */
-.outer-wrap-footer {
+.footer-column,
+.site-footer {
   background-color: #fff;
   background-color: rgba(255, 255, 255, 0.6);
-  color: #000;
-}
-.outer-wrap-footer p a {
-  color: inherit;
+  box-shadow: 0 4px 8px 0 black;
 }
 /**
 * Import the vertical grid.
